@@ -46,12 +46,12 @@ It extract all possible affixation from a word and cite all possible configurati
 ```
 ```python
 >>> ArListem=ArabicLightStemmer();
->>> word=\<u'فتضربين'>
+>>> word=u'فتضربين'>
 >>> ArListem.segment(word);
 >>> print ArListem.get_affix_list();
-%[{'prefix': u'ف', 'root': u'ضرب', 'suffix': u'\u064aن', 'stem': u'تضرب'}, 
-%{'prefix': u'فت', 'root': u'ضرب', 'suffix': u'\u064aن', 'stem': u'ضرب'}, 
-%{'prefix': u'', 'root': u'فضربن', 'suffix': u'', 'stem': u'فتضرب\u064aن'}]
+%[{'prefix': u'ف', 'root': u'ضرب', 'suffix': u'ين', 'stem': u'تضرب'}, 
+%{'prefix': u'فت', 'root': u'ضرب', 'suffix': u'ين', 'stem': u'ضرب'}, 
+%{'prefix': u'', 'root': u'فضربن', 'suffix': u'', 'stem': u'فتضربين'}]
 ```
 
 The result is represented as a vector of segment
@@ -79,7 +79,7 @@ Create an instance of stemmer class
 
 Give a word,
 ```python
->>> word=\<u'فتضربين'>
+>>> word=u'فتضربين'
 >>> mystemmer.segment(word);
 ```
 
@@ -94,9 +94,9 @@ You can now get multiple informations extracted from the word:
 
 ```python
 >>> mystemmer.get_affix_list()
-[{'prefix': u'\<ف>', 'root': u'\<ضرب>', 'suffix': u'\<ين>', 'stem': u'\<تضرب>'}, 
-{'prefix': u'\<فت>', 'root': u'\<ضرب>', 'suffix': u'\<ين>', 'stem': u'\<ضرب>'}, 
-{'prefix': u'', 'root': u'\<فضربن>', 'suffix': u'', 'stem': u'\<فتضربين>'}]
+[{'prefix': u'ف', 'root': u'ضرب', 'suffix': u'ين', 'stem': u'تضرب'}, 
+{'prefix': u'فت', 'root': u'ضرب', 'suffix': u'ين', 'stem': u'ضرب'}, 
+{'prefix': u'', 'root': u'فضربن', 'suffix': u'', 'stem': u'فتضربين'}]
 ```
 Or extract Root
 ```python

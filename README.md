@@ -2,8 +2,8 @@
 =======
 Tashaphyne: Arabic Light Stemmer تاشفين: التجذيع الخفيف للنصوص العربية
 
-[![downloads]( https://img.shields.io/pypi/dw/Tashaphyne.svg)](https://pypi.python.org/pypi/Tashaphyne)
-[![downloads]( https://img.shields.io/pypi/dm/Tashaphyne.svg)](https://pypi.python.org/pypi/Tashaphyne)
+[![downloads]( https://img.shields.io/pypi/dw/tashaphyne.svg)](https://pypi.python.org/pypi/Tashaphyne)
+[![downloads]( https://img.shields.io/pypi/dm/tashaphyne.svg)](https://pypi.python.org/pypi/Tashaphyne)
 
   Developpers:  Taha Zerrouki: http://tahadz.com
     taha dot zerrouki at gmail dot com
@@ -23,7 +23,29 @@ Feedbacks  |[Comments](http://tahadz.com/tashaphyne/contact)
 Accounts  |[@Twitter](https://twitter.com/linuxscout)  [@Sourceforge](http://sourceforge.net/projects/tashaphyne/)
 
 
-Usage
+
+## Citation
+If you would cite it in academic work, can you use this citation
+```
+T. Zerrouki‏, Tashaphyne, Arabic light stemmer‏,  https://pypi.python.org/pypi/Tashaphyne/0.2
+```
+or in bibtex format
+```bibtex
+@misc{zerrouki2012tashaphyne,
+  title={Tashaphyne, Arabic light stemmer},
+  author={Zerrouki, Taha},
+  url={https://pypi.python.org/pypi/Tashaphyne/0.2},
+  year={2012}
+}
+```
+Applications
+====
+* Stemming texts
+* Text Classification and categorization
+* Sentiment Analysis
+* Named Entities Recognition
+
+Installation
 =====
 ```
 pip install tashaphyne

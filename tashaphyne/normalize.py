@@ -95,10 +95,8 @@ def normalize_lamalef(text):
 #--------------------------------------
 def normalize_spellerrors(text):
     """Normalize some spellerrors like, 
-    TEH_MARBUTA into HEH,ALEF_MAKSURA into YEH, 
-    and return a result text.
-    In some context users omit the difference between
-     TEH_MARBUTA and HEH, and ALEF_MAKSURA and YEh.
+    TEH_MARBUTA into HEH,ALEF_MAKSURA into YEH,  and return a result text.
+    In some context users omit the difference between TEH_MARBUTA and HEH, and ALEF_MAKSURA and YEh.
     The conversions are:
         - TEH_MARBUTA into HEH
         - ALEF_MAKSURA into YEH

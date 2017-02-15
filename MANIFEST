@@ -1,0 +1,10 @@
+README
+setup.py
+tashaphyne\__init__.py
+tashaphyne\arabic_const.py
+tashaphyne\module1.py
+tashaphyne\module2.py
+tashaphyne\normalize.py
+tashaphyne\stem_const.py
+tashaphyne\stemming.py
+tashaphyne\testdoc.py

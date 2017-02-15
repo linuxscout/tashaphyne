@@ -1,0 +1,2267 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>tashaphyne.stemming.ArabicLightStemmer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >tashaphyne</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;tashaphyne ::
+        <a href="tashaphyne.stemming-module.html">Module&nbsp;stemming</a> ::
+        Class&nbsp;ArabicLightStemmer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="tashaphyne.stemming.ArabicLightStemmer-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class ArabicLightStemmer</h1><p class="nomargin-top"><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer">source&nbsp;code</a></span></p>
+<p>ArabicLightStemmer: a class which proved a configurable stemmer and 
+  segmentor for arabic text.</p>
+  <h1 class="heading">Features:</h1>
+    <ul>
+      <li>
+        Arabic word Light Stemming.
+      </li>
+      <li>
+        Root Extraction.
+      </li>
+      <li>
+        Word Segmentation
+      </li>
+      <li>
+        Word normalization
+      </li>
+      <li>
+        Default Arabic Affixes list.
+      </li>
+      <li>
+        An customizable Light stemmer: possibility of change stemmer 
+        options and data.
+      </li>
+      <li>
+        Data independent stemmer
+      </li>
+    </ul>
+
+<hr />
+<div class="fields">      <dl><dt>Authors:</dt>
+        <dd>
+          Taha Zerrouki &lt;taha_zerrouki at gmail dot com&gt;,
+          Taha Zerrouki
+        </dd>
+      </dl>
+      <p><strong>Contact:</strong>
+        taha dot zerrouki at gmail dot com
+      </p>
+      <p><strong>Copyright:</strong>
+        Arabtechies,  Arabeyes,   Taha Zerrouki
+      </p>
+      <p><strong>License:</strong>
+        GPL
+      </p>
+      <p><strong>Date:</strong>
+        2017/02/15
+      </p>
+      <p><strong>Version:</strong>
+        0.3
+      </p>
+</div><!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Attribut Functions</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_prefix_letters" class="summary-sig-name">get_prefix_letters</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the prefixation letters.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_prefix_letters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_prefix_letters" class="summary-sig-name">set_prefix_letters</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_prefix_letters</span>)</span><br />
+      set the prefixation letters.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_prefix_letters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_suffix_letters" class="summary-sig-name">get_suffix_letters</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the suffixation letters.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_suffix_letters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_suffix_letters" class="summary-sig-name">set_suffix_letters</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_suffix_letters</span>)</span><br />
+      set the suffixation letters.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_suffix_letters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_infix_letters" class="summary-sig-name">get_infix_letters</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      get the inffixation letters.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_infix_letters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_infix_letters" class="summary-sig-name">set_infix_letters</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_infix_letters</span>)</span><br />
+      set the inffixation letters.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_infix_letters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_joker" class="summary-sig-name">get_joker</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      get the joker letter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_joker">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_joker" class="summary-sig-name">set_joker</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_joker</span>)</span><br />
+      set the joker letter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_joker">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_max_prefix_length" class="summary-sig-name">get_max_prefix_length</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the constant of max length of the prefix used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_max_prefix_length">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_max_prefix_length" class="summary-sig-name">set_max_prefix_length</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_max_prefix_length</span>)</span><br />
+      Set the constant of max length of the prefix used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_max_prefix_length">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_max_suffix_length" class="summary-sig-name">get_max_suffix_length</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the constant of max length of the suffix used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_max_suffix_length">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_max_suffix_length" class="summary-sig-name">set_max_suffix_length</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_max_suffix_length</span>)</span><br />
+      Set the constant of max length of the suffix used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_max_suffix_length">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_min_stem_length" class="summary-sig-name">get_min_stem_length</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the constant of min length of the stem used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_min_stem_length">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_min_stem_length" class="summary-sig-name">set_min_stem_length</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_min_stem_length</span>)</span><br />
+      Set the constant of min length of the stem used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_min_stem_length">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">set().</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_prefix_list" class="summary-sig-name">get_prefix_list</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the prefixes list used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_prefix_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_prefix_list" class="summary-sig-name">set_prefix_list</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_prefix_list</span>)</span><br />
+      Set  prefixes list used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_prefix_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">set().</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_suffix_list" class="summary-sig-name">get_suffix_list</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the suffixes list used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_suffix_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_suffix_list" class="summary-sig-name">set_suffix_list</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_suffix_list</span>)</span><br />
+      Set  suffixes list used by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_suffix_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#set_word" class="summary-sig-name">set_word</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">new_word</span>)</span><br />
+      Set the word to treat by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_word">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_word" class="summary-sig-name">get_word</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the last word treated by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_word">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Calculated Attribut Functions</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_starword" class="summary-sig-name">get_starword</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the starlike word treated by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_starword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_root" class="summary-sig-name">get_root</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the root of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_root">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_normalized" class="summary-sig-name">get_normalized</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the normalized form of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_normalized">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_unvocalized" class="summary-sig-name">get_unvocalized</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the unvocalized form of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_unvocalized">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_left" class="summary-sig-name">get_left</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the the left position of stemming (prefixe end position )in 
+      the word treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_left">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_right" class="summary-sig-name">get_right</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return the the right position of stemming (suffixe start position )in
+      the word treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_right">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_stem" class="summary-sig-name">get_stem</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the stem of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_stem">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_starstem" class="summary-sig-name">get_starstem</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the star form stem of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_starstem">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_prefix" class="summary-sig-name">get_prefix</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the prefix of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_prefix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_suffix" class="summary-sig-name">get_suffix</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the suffix of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_suffix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_affix" class="summary-sig-name">get_affix</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the affix of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_affix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_affix_tuple" class="summary-sig-name">get_affix_tuple</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">0</span>)</span><br />
+      return the affix tuple of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_affix_tuple">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Stemming Functions</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#light_stem" class="summary-sig-name">light_stem</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">word</span>)</span><br />
+      Stemming function, stem an arabic word, and return a stem.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.light_stem">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">tuple.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#transform2stars" class="summary-sig-name">transform2stars</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">word</span>)</span><br />
+      Transform all non affixation letters into a star.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.transform2stars">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#extract_root" class="summary-sig-name">extract_root</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefix_index</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">suffix_index</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      return the root of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.extract_root">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Tree stucture</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#_create_prefix_tree" class="summary-sig-name" onclick="show_private();">_create_prefix_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prefixes</span>)</span><br />
+      Create a prefixes tree from given prefixes list</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer._create_prefix_tree">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Tree stucture</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#_create_suffix_tree" class="summary-sig-name" onclick="show_private();">_create_suffix_tree</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">suffixes</span>)</span><br />
+      Create a suffixes tree from given suffixes list</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer._create_suffix_tree">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list of int</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#lookup_prefixes" class="summary-sig-name">lookup_prefixes</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">word</span>)</span><br />
+      lookup for prefixes in the word</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.lookup_prefixes">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list of int</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#lookup_suffixes" class="summary-sig-name">lookup_suffixes</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">word</span>)</span><br />
+      lookup for suffixes in the word</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.lookup_suffixes">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Segmentation Functions</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">set of tuple of integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#segment" class="summary-sig-name">segment</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">word</span>)</span><br />
+      generate  a list of  all posibble segmentation positions (lef, right)
+      of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.segment">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">set of tuple of integer.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_segment_list" class="summary-sig-name">get_segment_list</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return   a list of segmentation positions (left, right) of the 
+      treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_segment_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list of dict.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#get_affix_list" class="summary-sig-name">get_affix_list</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      return   a list of affix tuple of the treated word by the stemmer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_affix_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;General Functions</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">unicode.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#normalize" class="summary-sig-name">normalize</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">word</span>=<span class="summary-sig-default"><code class="variable-quote">u'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Normalize a word.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.normalize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="tashaphyne.stemming.ArabicLightStemmer-class.html#tokenize" class="summary-sig-name">tokenize</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">text</span>=<span class="summary-sig-default"><code class="variable-quote">u'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Tokenize text into words</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.tokenize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="get_prefix_letters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_prefix_letters</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_prefix_letters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the prefixation letters. This constant take 
+  DEFAULT_PREFIX_LETTERS by default.</p>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>return a letters.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_prefix_letters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_prefix_letters</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_prefix_letters</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_prefix_letters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>set the prefixation letters. This constant take DEFAULT_PREFIX_LETTERS
+  by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_prefix_letters</code></strong> (unicode.) - letters to be striped from a word, e.g.new_prefix_letters = 
+          u&quot;&#1608;&#1601;&quot;:.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_suffix_letters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_suffix_letters</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_suffix_letters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the suffixation letters. This constant take 
+  DEFAULT_SUFFIX_LETTERS by default.</p>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>return a letters.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_suffix_letters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_suffix_letters</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_suffix_letters</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_suffix_letters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>set the suffixation letters. This constant take DEFAULT_SUFFIX_LETTERS
+  by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_suffix_letters</code></strong> (unicode.) - letters to be striped from the end of a word, 
+          e.g.new_suffix_letters = u&quot;&#1577;&#1608;&#1606;&quot;:.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_infix_letters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_infix_letters</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_infix_letters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>get the inffixation letters. This constant take DEFAULT_INFIX_LETTERS 
+  by default.</p>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>infixes letters.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_infix_letters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_infix_letters</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_infix_letters</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_infix_letters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>set the inffixation letters. This constant take DEFAULT_INFIX_LETTERS 
+  by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_infix_letters</code></strong> (unicode.) - letters to be striped from the middle of a word, 
+          e.g.new_infix_letters = u&quot;&#1571;&#1608;&#1610;&quot;:.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_joker"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_joker</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_joker">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>get the joker letter. This constant take DEFAULT_JOKER by default.</p>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>joker letter.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_joker"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_joker</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_joker</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_joker">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>set the joker letter. This constant take DEFAULT_JOKER by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_joker</code></strong> (unicode.) - joker letter.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_max_prefix_length"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_max_prefix_length</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_max_prefix_length">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the constant of max length of the prefix used by the stemmer. 
+  This constant take DEFAULT_MAX_PREFIX_LENGTH by default.</p>
+  <dl class="fields">
+    <dt>Returns: integer.</dt>
+        <dd>return a number.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_max_prefix_length"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_max_prefix_length</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_max_prefix_length</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_max_prefix_length">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the constant of max length of the prefix used by the stemmer. This
+  constant take DEFAULT_MAX_PREFIX_LENGTH by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_max_prefix_length</code></strong> (integer.) - the new max prefix length constant.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_max_suffix_length"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_max_suffix_length</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_max_suffix_length">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the constant of max length of the suffix used by the stemmer. 
+  This constant take DEFAULT_MAX_SUFFIX_LENGTH by default.</p>
+  <dl class="fields">
+    <dt>Returns: integer.</dt>
+        <dd>return a number.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_max_suffix_length"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_max_suffix_length</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_max_suffix_length</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_max_suffix_length">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the constant of max length of the suffix used by the stemmer. This
+  constant take DEFAULT_MAX_SUFFIX_LENGTH by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_max_suffix_length</code></strong> (integer.) - the new max suffix length constant.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_min_stem_length"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_min_stem_length</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_min_stem_length">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the constant of min length of the stem used by the stemmer. 
+  This constant take DEFAULT_MIN_STEM_LENGTH by default.</p>
+  <dl class="fields">
+    <dt>Returns: integer.</dt>
+        <dd>return a number.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_min_stem_length"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_min_stem_length</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_min_stem_length</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_min_stem_length">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the constant of min length of the stem used by the stemmer. This 
+  constant take DEFAULT_MIN_STEM_LENGTH by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_min_stem_length</code></strong> (integer.) - the min stem length constant.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_prefix_list"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_prefix_list</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_prefix_list">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the prefixes list used by the stemmer. This constant take 
+  DEFAULT_PREFIX_LIST by default.</p>
+  <dl class="fields">
+    <dt>Returns: set().</dt>
+        <dd>prefixes list.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_prefix_list"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_prefix_list</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_prefix_list</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_prefix_list">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set  prefixes list used by the stemmer. This constant take 
+  DEFAULT_PREFIX_LIST by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_prefix_list</code></strong> (set of unicode string.) - a set of prefixes.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_suffix_list"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_suffix_list</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_suffix_list">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the suffixes list used by the stemmer. This constant take 
+  DEFAULT_SUFFIX_LIST by default.</p>
+  <dl class="fields">
+    <dt>Returns: set().</dt>
+        <dd>suffixes list.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_suffix_list"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_suffix_list</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_suffix_list</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_suffix_list">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set  suffixes list used by the stemmer. This constant take 
+  DEFAULT_SUFFIX_LIST by default.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_suffix_list</code></strong> (set of unicode string.) - a set of suffixes.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_word"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_word</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">new_word</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.set_word">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the word to treat by the stemmer.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>new_word</code></strong> (unicode.) - the new word.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_word"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_word</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_word">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the last word treated by the stemmer.</p>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>word.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_starword"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_starword</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_starword">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the starlike word treated by the stemmer. All non affix letters
+  are converted to a joker. The joker take by default DEFAULT_JOKER = 
+  &quot;*&quot;.</p>
+  <p>Exmaple:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1589;&#1585;&#1576;&#1608;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starword()
+<span class="py-output">&#1571;&#1601;&#1578;***&#1608;&#1606;&#1606;&#1610;</span></pre>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>word.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_root"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_root</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_root">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the root of the treated word by the stemmer. All non affix 
+  letters are converted to a joker. All letters in the joker places are 
+  part of root. The joker take by default DEFAULT_JOKER = 
+  &quot;*&quot;.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1589;&#1585;&#1576;&#1608;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starword()
+<span class="py-output">&#1571;&#1601;&#1578;***&#1608;&#1606;&#1606;&#1610;</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_root()
+<span class="py-output">&#1590;&#1585;&#1576;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+        <li><strong class="pname"><code>suffix_index</code></strong> (integer.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>root.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_normalized"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_normalized</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_normalized">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the normalized form of the treated word by the stemmer. Some 
+  letters are converted into normal form like Hamzat.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">&quot;&#1575;&#1587;&#1578;&#1572;&#1580;&#1585;&#1615;&quot;</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_normalized()
+<span class="py-output">&#1575;&#1587;&#1578;&#1569;&#1580;&#1585;</span></pre>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>normalized word.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_unvocalized"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_unvocalized</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_unvocalized">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the unvocalized form of the treated word by the stemmer. 
+  Harakat are striped.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">&quot;&#1575;&#1604;&#1618;&#1593;&#1614;&#1585;&#1614;&#1576;&#1616;&#1610;&#1617;&#1577;&#1615;&quot;</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_unvocalized()
+<span class="py-output">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></pre>
+  <dl class="fields">
+    <dt>Returns: unicode.</dt>
+        <dd>unvocalized word.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_left"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_left</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_left">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the the left position of stemming (prefixe end position )in the
+  word treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1589;&#1585;&#1576;&#1608;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starword()
+<span class="py-output">&#1571;&#1601;&#1578;***&#1608;&#1606;&#1606;&#1610;</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_left()
+<span class="py-output">3</span></pre>
+  <dl class="fields">
+    <dt>Returns: integer.</dt>
+        <dd>the left position of stemming.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_right"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_right</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_right">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the the right position of stemming (suffixe start position )in 
+  the word treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1589;&#1585;&#1576;&#1608;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starword()
+<span class="py-output">&#1571;&#1601;&#1578;***&#1608;&#1606;&#1606;&#1610;</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_right()
+<span class="py-output">6</span></pre>
+  <dl class="fields">
+    <dt>Returns: integer.</dt>
+        <dd>the right position of stemming.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_stem"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_stem</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_stem">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the stem of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1603;&#1575;&#1578;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_stem()
+<span class="py-output">&#1603;&#1575;&#1578;&#1576;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+        <li><strong class="pname"><code>suffix_index</code></strong> (integer.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>stem.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_starstem"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_starstem</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_starstem">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the star form stem of the treated word by the stemmer. All non 
+  affix letters are converted to a joker. The joker take by default 
+  DEFAULT_JOKER = &quot;*&quot;.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1603;&#1575;&#1578;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_stem()
+<span class="py-output">&#1603;&#1575;&#1578;&#1576;</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starstem()
+<span class="py-output">*&#1575;&#1578;*</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+        <li><strong class="pname"><code>suffix_index</code></strong> (integer.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>stared form of stem.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_prefix"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_prefix</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_prefix">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the prefix of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1603;&#1575;&#1578;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_prefix()
+<span class="py-output">&#1571;&#1601;&#1578;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>prefixe.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_suffix"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_suffix</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_suffix">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the suffix of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1603;&#1575;&#1578;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_suffix()
+<span class="py-output">&#1575;&#1606;&#1606;&#1610;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>suffix_index</code></strong> (integer.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>suffixe.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_affix"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_affix</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_affix">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the affix of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1603;&#1575;&#1578;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_affix()
+<span class="py-output">&#1571;&#1601;&#1578;-&#1575;&#1606;&#1606;&#1610;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+        <li><strong class="pname"><code>suffix_index</code></strong> (in4teger.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>suffixe.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_affix_tuple"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_affix_tuple</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_affix_tuple">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the affix tuple of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1590;&#1575;&#1585;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_affix_tuple()
+<span class="py-output">{'prefix': u'&#1571;&#1601;&#1578;', 'root': u'&#1590;&#1585;&#1576;', 'suffix': u'&#1575;&#1606;&#1606;&#1610;', 'stem': u'&#1590;&#1575;&#1585;&#1576;'}</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+        <li><strong class="pname"><code>suffix_index</code></strong> (integer.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: dict.</dt>
+        <dd>affix tuple.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="light_stem"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">light_stem</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">word</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.light_stem">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Stemming function, stem an arabic word, and return a stem. This 
+  function store in the instance the stemming positions (left, right), then
+  it's possible to get other calculted attributs like : stem, prefixe, 
+  suffixe, root.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1590;&#1575;&#1585;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.light_stem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_stem()
+<span class="py-output">&#1590;&#1575;&#1585;&#1576;</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starstem()
+<span class="py-output">*&#1575;**</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_left()
+<span class="py-output">3</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_right()
+<span class="py-output">6</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_root()
+<span class="py-output">&#1590;&#1585;&#1576;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>word</code></strong> (unicode.) - the input word.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>stem.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="transform2stars"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">transform2stars</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">word</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.transform2stars">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Transform all non affixation letters into a star. the star is a 
+  joker(by default '*'). which indicates that the correspandent letter is 
+  an original. this function is used by the stmmer to identify original 
+  letters. and return a stared form and stemming positions (left, 
+  right)</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1590;&#1575;&#1585;&#1576;&#1575;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>starword, left, right = ArListem.transformToStrars(word)
+<span class="py-output">(&#1571;&#1601;&#1578;*&#1575;**&#1575;&#1606;&#1606;&#1610;, 3, 6)</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>word</code></strong> (unicode) - the input word.</li>
+    </ul></dd>
+    <dt>Returns: tuple.</dt>
+        <dd>(starword, left, right):
+          <ul>
+            <li>
+              starword : all original letters converted into a star
+            </li>
+            <li>
+              left : the greater possible left stemming position.
+            </li>
+            <li>
+              right : the greater possible right stemming position.
+            </li>
+          </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="extract_root"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">extract_root</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefix_index</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">suffix_index</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.extract_root">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return the root of the treated word by the stemmer. All non affix 
+  letters are converted to a joker. All letters in the joker places are 
+  part of root. The joker take by default DEFAULT_JOKER = 
+  &quot;*&quot;.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1571;&#1601;&#1578;&#1589;&#1585;&#1576;&#1608;&#1606;&#1606;&#1610;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>stem = ArListem.lightStem(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_starword()
+<span class="py-output">&#1571;&#1601;&#1578;***&#1608;&#1606;&#1606;&#1610;</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_root()
+<span class="py-output">&#1590;&#1585;&#1576;</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefix_index</code></strong> (integer.) - indicate the left stemming position if = -1: not cosidered, and 
+          take the default word prefix lentgh.</li>
+        <li><strong class="pname"><code>suffix_index</code></strong> (integer.) - indicate the right stemming position. if = -1: not cosidered, and
+          take the default word suffix position.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>root.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_create_prefix_tree"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_create_prefix_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prefixes</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer._create_prefix_tree">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a prefixes tree from given prefixes list</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>prefixes</code></strong> (list of unicode @return : prefixes tree) - list of prefixes</li>
+    </ul></dd>
+    <dt>Returns: Tree stucture</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_create_suffix_tree"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_create_suffix_tree</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">suffixes</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer._create_suffix_tree">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a suffixes tree from given suffixes list</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>suffixes</code></strong> (list of unicode @return : suffixes tree) - list of suffixes</li>
+    </ul></dd>
+    <dt>Returns: Tree stucture</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="lookup_prefixes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">lookup_prefixes</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">word</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.lookup_prefixes">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>lookup for prefixes in the word</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>word</code></strong> (unicode @return : list of prefixes starts positions) - the given word</li>
+    </ul></dd>
+    <dt>Returns: list of int</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="lookup_suffixes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">lookup_suffixes</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">word</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.lookup_suffixes">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>lookup for suffixes in the word</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>word</code></strong> (unicode @return : list of suffixes starts positions) - the given word</li>
+    </ul></dd>
+    <dt>Returns: list of int</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="segment"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">segment</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">word</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.segment">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>generate  a list of  all posibble segmentation positions (lef, right)
+  of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1601;&#1578;&#1590;&#1585;&#1576;&#1610;&#1606;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.segment(word)
+<span class="py-output">set(([(1, 5), (2, 5), (0, 7)])</span></pre>
+  <dl class="fields">
+    <dt>Returns: set of tuple of integer.</dt>
+        <dd>List of segmentation</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_segment_list"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_segment_list</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_segment_list">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return   a list of segmentation positions (left, right) of the treated
+  word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1601;&#1578;&#1590;&#1585;&#1576;&#1610;&#1606;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem.segment(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_segment_list()
+<span class="py-output">set(([(1, 5), (2, 5), (0, 7)])</span></pre>
+  <dl class="fields">
+    <dt>Returns: set of tuple of integer.</dt>
+        <dd>List of segmentation</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_affix_list"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_affix_list</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.get_affix_list">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>return   a list of affix tuple of the treated word by the stemmer.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem = ArabicLightStemmer()
+<span class="py-prompt">&gt;&gt;&gt; </span>word = u<span class="py-string">'&#1601;&#1578;&#1590;&#1585;&#1576;&#1610;&#1606;'</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>ArListem.segment(word)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> ArListem.get_affix_list()
+<span class="py-output">[{'prefix': u'&#1601;', 'root': u'&#1590;&#1585;&#1576;', 'suffix': u'&#1610;&#1606;', 'stem': u'&#1578;&#1590;&#1585;&#1576;'}, </span>
+<span class="py-output">{'prefix': u'&#1601;&#1578;', 'root': u'&#1590;&#1585;&#1576;', 'suffix': u'&#1610;&#1606;', 'stem': u'&#1590;&#1585;&#1576;'}, </span>
+<span class="py-output">{'prefix': u'', 'root': u'&#1601;&#1590;&#1585;&#1576;&#1606;', 'suffix': u'', 'stem': u'&#1601;&#1578;&#1590;&#1585;&#1576;&#1610;&#1606;'}]</span></pre>
+  <dl class="fields">
+    <dt>Returns: list of dict.</dt>
+        <dd>List of Affixes tuple</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="normalize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">normalize</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">word</span>=<span class="sig-default"><code class="variable-quote">u'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.normalize">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Normalize a word. Convert some leters forms into unified form.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>word</code></strong> (unicode.) - the input word, if word is empty, the word member of the class is
+          normalized.</li>
+    </ul></dd>
+    <dt>Returns: unicode.</dt>
+        <dd>normalized word.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="tokenize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">tokenize</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">text</span>=<span class="sig-default"><code class="variable-quote">u'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="tashaphyne.stemming-pysrc.html#ArabicLightStemmer.tokenize">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Tokenize text into words</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>text</code></strong> (unicode.) - the input text.</li>
+    </ul></dd>
+    <dt>Returns: list.</dt>
+        <dd>list of words.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >tashaphyne</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Feb 15 13:46:35 2017
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

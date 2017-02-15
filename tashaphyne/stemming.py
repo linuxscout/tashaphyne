@@ -4,7 +4,8 @@ Arabic Light Stemmer: a class which provides a configurable stemmer
 and segmentor for arabic text.
 
 Features:
- == == == == = 
+=========
+
     - Arabic word Light Stemming.
     - Root Extraction.
     - Word Segmentation
@@ -13,13 +14,15 @@ Features:
     - An customizable Light stemmer: possibility of change 
     stemmer options and data.
     - Data independent stemmer
-Licence:
- == == == ==  
-    Author 2010, Taha Zerrouki <taha_zerrouki at gmail dot com>
-    Released under terms of Gnu Public License.
-    The Latest version of the license can be found on
-    "www.gnu.org/copyleft/gpl.html"
 
+
+@author: Taha Zerrouki <taha_zerrouki at gmail dot com>
+@author: Taha Zerrouki
+@contact: taha dot zerrouki at gmail dot com
+@copyright: Arabtechies,  Arabeyes,   Taha Zerrouki
+@license: GPL
+@date:2017/02/15
+@version:0.3
 """
 
 import  re, sys
@@ -33,7 +36,28 @@ import tashaphyne.stem_const as stem_const
 class ArabicLightStemmer:
     """
     ArabicLightStemmer: a class which proved a configurable stemmer
-     and segmentor for arabic text.
+    and segmentor for arabic text.
+
+    Features:
+    =========
+
+        - Arabic word Light Stemming.
+        - Root Extraction.
+        - Word Segmentation
+        - Word normalization
+        - Default Arabic Affixes list.
+        - An customizable Light stemmer: possibility of change 
+        stemmer options and data.
+        - Data independent stemmer
+
+
+    @author: Taha Zerrouki <taha_zerrouki at gmail dot com>
+    @author: Taha Zerrouki
+    @contact: taha dot zerrouki at gmail dot com
+    @copyright: Arabtechies,  Arabeyes,   Taha Zerrouki
+    @license: GPL
+    @date:2017/02/15
+    @version:0.3
     """
     def __init__(self):
         #load affix information
@@ -75,7 +99,7 @@ class ArabicLightStemmer:
         """ set the prefixation letters.
         This constant take DEFAULT_PREFIX_LETTERS by default.
         @param new_prefix_letters: letters to be striped from a word,
-         e.g.new_prefix_letters = u"وف":.
+        e.g.new_prefix_letters = u"وف":.
         @type new_prefix_letters: unicode.
         """
         self.prefix_letters = new_prefix_letters
@@ -92,7 +116,7 @@ class ArabicLightStemmer:
         """ set the suffixation letters.
         This constant take DEFAULT_SUFFIX_LETTERS by default.
         @param new_suffix_letters: letters to be striped from the end of a word,
-         e.g.new_suffix_letters = u"ةون":.
+        e.g.new_suffix_letters = u"ةون":.
         @type new_suffix_letters: unicode.
         """
         self.suffix_letters = new_suffix_letters
@@ -109,7 +133,7 @@ class ArabicLightStemmer:
         """ set the inffixation letters.
         This constant take DEFAULT_INFIX_LETTERS by default.
         @param new_infix_letters: letters to be striped from the middle
-         of a word, e.g.new_infix_letters = u"أوي":.
+        of a word, e.g.new_infix_letters = u"أوي":.
         @type new_infix_letters: unicode.
         """
         self.infix_letters = new_infix_letters
@@ -236,10 +260,11 @@ class ArabicLightStemmer:
         """ return the starlike word treated by the stemmer.
         All non affix letters are converted to a joker.
         The joker take by default DEFAULT_JOKER = "*".
+        
         Exmaple:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتصربونني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_starword()
             أفت***ونني
 
@@ -253,20 +278,21 @@ class ArabicLightStemmer:
         All non affix letters are converted to a joker.
         All letters in the joker places are part of root.
         The joker take by default DEFAULT_JOKER = "*".
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتصربونني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_starword()
             أفت***ونني
             >>> print ArListem.get_root()
             ضرب
 
         @param prefix_index: indicate the left stemming position
-            if = -1: not cosidered, and take the default word prefix lentgh.
+        if = -1: not cosidered, and take the default word prefix lentgh.
         @type prefix_index:integer.
         @param suffix_index:indicate the right stemming position.
-            if = -1: not cosidered, and take the default word suffix position.
+        if = -1: not cosidered, and take the default word suffix position.
         @type suffix_index: integer.
         @return: root.
         @rtype: unicode.
@@ -278,10 +304,11 @@ class ArabicLightStemmer:
     def get_normalized(self):
         """ return the normalized form of the treated word by the stemmer.
         Some letters are converted into normal form like Hamzat.
+        
         Example:
             >>> word = u"استؤجرُ"
             >>> ArListem = ArabicLightStemmer()
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_normalized()
             استءجر
 
@@ -293,10 +320,11 @@ class ArabicLightStemmer:
     def get_unvocalized(self):
         """ return the unvocalized form of the treated word by the stemmer.
         Harakat are striped.
+        
         Example:
             >>> word = u"الْعَرَبِيّةُ"
             >>> ArListem = ArabicLightStemmer()
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_unvocalized()
             العربية
 
@@ -308,10 +336,11 @@ class ArabicLightStemmer:
     def get_left(self):
         """ return the the left position of stemming 
         (prefixe end position )in the word treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتصربونني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_starword()
             أفت***ونني
             >>> print ArListem.get_left()
@@ -325,10 +354,11 @@ class ArabicLightStemmer:
     def get_right(self):
         """ return the the right position of stemming 
         (suffixe start position )in the word treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتصربونني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_starword()
             أفت***ونني
             >>> print ArListem.get_right()
@@ -342,18 +372,19 @@ class ArabicLightStemmer:
 
     def get_stem(self, prefix_index = -1, suffix_index = -1):
         """ return the stem of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتكاتبانني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_stem()
             كاتب
 
         @param prefix_index: indicate the left stemming position
-            if = -1: not cosidered, and take the default word prefix lentgh.
+        if = -1: not cosidered, and take the default word prefix lentgh.
         @type prefix_index:integer.
         @param suffix_index:indicate the right stemming position.
-            if = -1: not cosidered, and take the default word suffix position.
+        if = -1: not cosidered, and take the default word suffix position.
         @type suffix_index: integer.
         @return: stem.
         @rtype: unicode.
@@ -372,20 +403,21 @@ class ArabicLightStemmer:
         """ return the star form stem of the treated word by the stemmer.
         All non affix letters are converted to a joker.
         The joker take by default DEFAULT_JOKER = "*".
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتكاتبانني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_stem()
             كاتب
             >>> print ArListem.get_starstem()
             *ات*
 
         @param prefix_index: indicate the left stemming position
-            if = -1: not cosidered, and take the default word prefix lentgh.
+        if = -1: not cosidered, and take the default word prefix lentgh.
         @type prefix_index:integer.
         @param suffix_index:indicate the right stemming position.
-            if = -1: not cosidered, and take the default word suffix position.
+        if = -1: not cosidered, and take the default word suffix position.
         @type suffix_index: integer.
         @return: stared form of stem.
         @rtype: unicode.
@@ -412,15 +444,16 @@ class ArabicLightStemmer:
 
     def get_prefix(self, prefix_index = -1):
         """ return the prefix of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتكاتبانني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_prefix()
             أفت
 
         @param prefix_index: indicate the left stemming position
-            if = -1: not cosidered, and take the default word prefix lentgh.
+        if = -1: not cosidered, and take the default word prefix lentgh.
         @type prefix_index:integer.
         @return:  prefixe.
         @rtype: unicode.
@@ -433,15 +466,16 @@ class ArabicLightStemmer:
 
     def get_suffix(self, suffix_index = -1):
         """ return the suffix of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتكاتبانني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_suffix()
             انني
 
         @param suffix_index:indicate the right stemming position.
-            if = -1: not cosidered, and take the default word suffix position.
+        if = -1: not cosidered, and take the default word suffix position.
         @type suffix_index: integer.
         @return:  suffixe.
         @rtype: unicode.
@@ -453,10 +487,11 @@ class ArabicLightStemmer:
 
     def get_affix(self, prefix_index = -1, suffix_index = -1):
         """ return the affix of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتكاتبانني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_affix()
             أفت-انني
 
@@ -474,10 +509,11 @@ class ArabicLightStemmer:
 
     def get_affix_tuple(self, prefix_index = -1, suffix_index = 0):
         """ return the affix tuple of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتضاربانني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_affix_tuple()
             {'prefix': u'أفت', 'root': u'ضرب', 'suffix': u'انني', 'stem': u'ضارب'}
 
@@ -502,6 +538,7 @@ class ArabicLightStemmer:
         u"""
         Stemming function, stem an arabic word, and return a stem.
         This function store in the instance the stemming positions (left, right), then it's possible to get other calculted attributs like : stem, prefixe, suffixe, root.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتضاربانني'
@@ -537,7 +574,8 @@ class ArabicLightStemmer:
         the star is a joker(by default '*'). 
         which indicates that the correspandent letter is an original.
         this function is used by the stmmer to identify original letters.
-         and return a stared form and stemming positions (left, right)
+        and return a stared form and stemming positions (left, right)
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتضاربانني'
@@ -620,10 +658,11 @@ class ArabicLightStemmer:
         All non affix letters are converted to a joker.
         All letters in the joker places are part of root.
         The joker take by default DEFAULT_JOKER = "*".
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'أفتصربونني'
-            >>> stem = ArListem.lightStem(word)
+            >>> stem = ArListem .light_stem(word)
             >>> print ArListem.get_starword()
             أفت***ونني
             >>> print ArListem.get_root()
@@ -759,8 +798,9 @@ class ArabicLightStemmer:
     #########################################################
 
     def segment(self, word):
-        """ generate  a list of  all posibble segmentation positions
-         (lef, right)  of the treated word by the stemmer.
+        """ generate  a list of  all possible segmentation positions
+        (lef, right)  of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'فتضربين'
@@ -802,7 +842,8 @@ class ArabicLightStemmer:
     # #########################################################
     def get_segment_list(self):
         """ return   a list of segmentation positions (left, right) 
-         of the treated word by the stemmer.
+        of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'فتضربين'
@@ -818,6 +859,7 @@ class ArabicLightStemmer:
 
     def get_affix_list(self, ):
         u""" return   a list of affix tuple of the treated word by the stemmer.
+        
         Example:
             >>> ArListem = ArabicLightStemmer()
             >>> word = u'فتضربين'
@@ -863,7 +905,7 @@ class ArabicLightStemmer:
     def tokenize(self, text = u""):
         """
         Tokenize text into words
-        @param text the input text.
+        @param text: the input text.
         @type text: unicode.
         @return: list of words.
         @rtype: list.
@@ -875,3 +917,53 @@ class ArabicLightStemmer:
             if u'' in mylist:
                 mylist.remove(u'')
             return mylist
+
+if __name__ == "__main__":
+    import pyarabic.arabrepr
+    arepr = pyarabic.arabrepr.ArabicRepr()
+    repr = arepr.repr
+    
+    ArListem = ArabicLightStemmer()
+    word = u'أفتضاربانني'
+    # stemming word
+    stem = ArListem.light_stem(word)
+    # extract stem
+    print ArListem.get_stem()
+    # extract root
+    print ArListem.get_root()
+
+    # get prefix position index
+    print ArListem.get_left()
+    # get prefix 
+    print ArListem.get_prefix()    
+    # get prefix with a specific index
+    print ArListem.get_prefix(2)    
+    
+    # get suffix position index
+    print ArListem.get_right()
+    # get suffix 
+    print ArListem.get_suffix()    
+    # get suffix with a specific index
+    print ArListem.get_suffix(10)    
+    # get affix tuple
+    print repr(ArListem.get_affix_tuple())    
+  
+
+    # star words
+    print ArListem.get_starword()
+    # get star stem
+    print ArListem.get_starstem()
+
+    #  get normalized word
+    print ArListem.get_normalized()    
+    #  get unvocalized word
+    print ArListem.get_unvocalized()
+    
+    # Detect all possible segmentation
+    print ArListem.segment(word) 
+    print ArListem.get_segment_list()
+    # get affix list
+    print repr(ArListem.get_affix_list() )
+    
+    
+    

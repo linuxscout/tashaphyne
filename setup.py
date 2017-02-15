@@ -1,7 +1,5 @@
 #!/usr/bin/python
 from setuptools import setup
-#~ from distutils.core import setup
-#~ from glob import glob
 
 # to install type:
 # python setup.py install --root=/
@@ -27,7 +25,7 @@ setup (name='Tashaphyne', version='0.3',
           'Development Status :: 5 - Production/Stable',
           'Natural Language :: Arabic',
           'Intended Audience :: Developers',
-          'Operating System :: OS independent',
+          'Operating System :: OS Independent',
           'Programming Language :: Python',
           'Topic :: Text Processing :: Linguistic',
           ],

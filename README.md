@@ -194,14 +194,46 @@ return a list of segmentation positions (left, right) of the treated word by the
 
 return a list of affix tuple of the treated word by the stemmer.
 
+### Customized Affix list
+تخصيص قوائم الزوائد
+يمكنن تخصيص قوائم السوابق واللواحق للحصول على نتائج افضل حسب السياق
+
+في المثال الموالي، سنستعمل مجذع تاشفين حسب قوائمه التلقائية، ثم نصنع مجذعا آخر يعطي نتائج مختلفة بتخصيص قوائم السوابق واللواحق
 
 You can modify and customize  the default affixes list by
 
 ```python
->>>mystemmer.set_prefix_list(NEW_PREFIX_LIST); 
->>>mystemmer.set_suffix_list(NEW_SUFFIX_LIST); 
+>>> import tashaphyne.stemming
+
+>>> CUSTOM_PREFIX_LIST = [u'كال', u'أفبال', u'أفك', u'فك', u'أولل', u'', u'أف', u'ول', u'أوال', u'ف', u'و', u'أو', u'ولل', u'فب', u'أول', u'ألل', u'لل', u'ب', u'وكال', u'أوب', u'بال', u'أكال', u'ال', u'أب', u'وب', u'أوبال', u'أ', u'وبال', u'أك', u'فكال', u'أوك', u'فلل', u'وك', u'ك', u'أل', u'فال', u'وال', u'أوكال', u'أفلل', u'أفل', u'فل', u'أال', u'أفكال', u'ل', u'أبال', u'أفال', u'أفب', u'فبال']
+>>> CUSTOM_SUFFIX_LIST = [u'كما', u'ك', u'هن', u'ي', u'ها', u'', u'ه', u'كم', u'كن', u'هم', u'هما', u'نا']
+
+>>> # simple stemmer with default affixes list
+... simple_stemmer = tashaphyne.stemming.ArabicLightStemmer()
+
+>>> # create a cعstomized stemmer object for stemming enclitics and procletics
+... custom_stemmer = tashaphyne.stemming.ArabicLightStemmer()
+>>> # configure the stemmer object
+... custom_stemmer.set_prefix_list(CUSTOM_PREFIX_LIST)
+>>> custom_stemmer.set_suffix_list(CUSTOM_SUFFIX_LIST)
+>>> 
+>>> word = u"بالمدرستين"
+>>> # segment word as 
+... simple_stemmer.segment(word)
+set([(4, 10), (4, 7), (4, 9), (4, 8), (3, 10), (0, 7), (3, 8), (1, 10), (1, 8), (3, 9), (0, 10), (1, 7), (0, 9), (3, 7), (0, 8), (1, 9)])
+>>> print  repr(simple_stemmer.get_affix_list())
+[{'prefix': u'بالم', 'root': u'درستين', 'stem': u'درستين', 'suffix': u''}, {'prefix': u'بالم', 'root': u'درس', 'stem': u'درس', 'suffix': u'تين'}, {'prefix': u'بالم', 'root': u'درستي', 'stem': u'درستي', 'suffix': u'ن'}, {'prefix': u'بالم', 'root': u'درست', 'stem': u'درست', 'suffix': u'ين'}, {'prefix': u'بال', 'root': u'مدرستين', 'stem': u'مدرستين', 'suffix': u''}, {'prefix': u'', 'root': u'بالمدرس', 'stem': u'بالمدرس', 'suffix': u'تين'}, ...]
+>>> 
+>>> custom_stemmer.segment(word)
+set([(1, 10), (3, 10), (0, 10)])
+>>> 
+>>> print  repr(custom_stemmer.get_affix_list())
+[{'prefix': u'ب', 'root': u'المدرستين', 'stem': u'المدرستين', 'suffix': u''}, {'prefix': u'بال', 'root': u'مدرستين', 'stem': u'مدرستين', 'suffix': u''}, {'prefix': u'', 'root': u'بالمدرستين', 'stem': u'بالمدرستين', 'suffix': u''}]
+>>> 
+
 ```
-This command will rebuild the Finite state automaton to consider new affixes list.
+
+This command *set_prefix_list*  and  *set_suffix_list" will rebuild the Finite state automaton to consider new affixes list.
 
 Package Documentation
 =====

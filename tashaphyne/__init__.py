@@ -10,4 +10,4 @@
 Regression testing.
 """
 __docformat__ = 'epytext en'
-from stemming import *
+#~ from stemming import *

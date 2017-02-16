@@ -24,14 +24,18 @@ Features:
 @date:2017/02/15
 @version:0.3
 """
-
+from __future__ import absolute_import
 import  re, sys
-sys.path.append('tashaphyne/lib/')
+sys.path.append('../support/')
 import pyarabic.araby as araby
-
-import tashaphyne.normalize as normalize
-import tashaphyne.stem_const as stem_const
-
+if __name__ == "__main__":
+    sys.path.append('../')    
+    import normalize
+    import stem_const
+else:
+    from . import normalize
+    from . import stem_const
+    
 
 class ArabicLightStemmer:
     """
@@ -81,7 +85,7 @@ class ArabicLightStemmer:
         self.segment_list = []
         #token pattern
         # letters and harakat
-        self.token_pat = re.compile(ur"[^\w\u064b-\u0652']+", re.UNICODE)
+        self.token_pat = re.compile(u"[^\w\u064b-\u0652']+", re.UNICODE)
         self.prefixes_tree = self._create_prefix_tree(self.prefix_list)
         self.suffixes_tree = self._create_suffix_tree(self.suffix_list)        
     ######################################################################
@@ -704,11 +708,11 @@ class ArabicLightStemmer:
             # print prefix.encode('utf8')
             branch = prefixestree
             for char in prefix:
-                if not branch.has_key(char):
+                if not char in branch:
                     branch[char] = {}
                 branch = branch[char]
             # branch['#'] = '#' # the hash # as an end postion
-            if branch.has_key('#'):
+            if '#' in branch:
                 branch['#'][prefix] = "#"
             else:
                 branch['#'] = {prefix:"#", }
@@ -728,11 +732,11 @@ class ArabicLightStemmer:
             branch = suffixestree
             #reverse a string
             for char in suffix[::-1]:
-                if not branch.has_key(char):
+                if not char in branch:
                     branch[char] = {}
                 branch = branch[char]
             # branch['#'] = '#' # the hash # as an end postion
-            if branch.has_key('#'):
+            if "#" in branch:
                 branch['#'][suffix] = "#"
             else:
                 branch['#'] = {suffix:"#", }
@@ -750,17 +754,17 @@ class ArabicLightStemmer:
         branch = self.prefixes_tree
         lefts = [0, ]
         i = 0
-        while i < len(word) and branch.has_key(word[i]):
-            if branch.has_key('#'):
+        while i < len(word) and word[i] in branch:
+            if "#" in branch:
                 # if branch['#'].has_key(word[:i]):
                 lefts.append(i)
-            if branch.has_key(word[i]):
+            if word[i] in branch:
                 branch = branch[word[i]]
             else:
                 # i +=  1
                 break
             i +=  1
-        if i < len(word) and branch.has_key('#') :
+        if i < len(word) and "#" in branch :
             lefts.append(i)
         return lefts    
 
@@ -778,19 +782,19 @@ class ArabicLightStemmer:
         # rights = [len(word)-1, ]
         rights = []        
         i = len(word)-1
-        while i >= 0 and branch.has_key(word[i]):
+        while i >= 0 and word[i] in branch:
             suffix = word[i]+suffix
-            if branch.has_key('#'):
+            if '#' in branch:
                 # if branch['#'].has_key(word[i:]):
                     # rights.append(i)
                 rights.append(i+1)
-            if branch.has_key(word[i]):
+            if word[i] in branch:
                 branch = branch[word[i]]
             else:
                 # i -=  1
                 break
             i -= 1
-        if i >= 0 and branch.has_key('#') :#and branch['#'].has_key(word[i+1:]):
+        if i >= 0 and "#" in branch :#and branch['#'].has_key(word[i+1:]):
             rights.append(i+1)
         return rights
     #########################################################
@@ -919,51 +923,51 @@ class ArabicLightStemmer:
             return mylist
 
 if __name__ == "__main__":
-    import pyarabic.arabrepr
-    arepr = pyarabic.arabrepr.ArabicRepr()
-    repr = arepr.repr
+    #~ import pyarabic.arabrepr
+    #~ arepr = pyarabic.arabrepr.ArabicRepr()
+    #~ repr = arepr.repr
     
     ArListem = ArabicLightStemmer()
     word = u'أفتضاربانني'
     # stemming word
     stem = ArListem.light_stem(word)
     # extract stem
-    print ArListem.get_stem()
+    print (ArListem.get_stem())
     # extract root
-    print ArListem.get_root()
+    print (ArListem.get_root())
 
     # get prefix position index
-    print ArListem.get_left()
+    print (ArListem.get_left())
     # get prefix 
-    print ArListem.get_prefix()    
+    print (ArListem.get_prefix())    
     # get prefix with a specific index
-    print ArListem.get_prefix(2)    
+    print (ArListem.get_prefix(2))    
     
     # get suffix position index
-    print ArListem.get_right()
+    print (ArListem.get_right())
     # get suffix 
-    print ArListem.get_suffix()    
+    print (ArListem.get_suffix())    
     # get suffix with a specific index
-    print ArListem.get_suffix(10)    
+    print (ArListem.get_suffix(10))    
     # get affix tuple
-    print repr(ArListem.get_affix_tuple())    
+    print (repr(ArListem.get_affix_tuple()))
   
 
     # star words
-    print ArListem.get_starword()
+    print (ArListem.get_starword())
     # get star stem
-    print ArListem.get_starstem()
+    print (ArListem.get_starstem())
 
     #  get normalized word
-    print ArListem.get_normalized()    
+    print (ArListem.get_normalized())    
     #  get unvocalized word
-    print ArListem.get_unvocalized()
+    print (ArListem.get_unvocalized())
     
     # Detect all possible segmentation
-    print ArListem.segment(word) 
-    print ArListem.get_segment_list()
+    print (ArListem.segment(word) )
+    print (ArListem.get_segment_list())
     # get affix list
-    print repr(ArListem.get_affix_list() )
+    print (ArListem.get_affix_list() )
     
     
     

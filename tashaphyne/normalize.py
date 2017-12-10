@@ -1,11 +1,18 @@
 #!/usr/bin/python
 # -*- coding=utf-8 -*-
 """
-Utility functions used by to prepare an arabic text to search and index .
+Normalize
+Utility functions used by to prepare an arabic text to search and index.
+@author: Taha Zerrouki <taha_zerrouki at gmail dot com>
+@author: Taha Zerrouki
+@contact: taha dot zerrouki at gmail dot com
+@copyright: Arabtechies, Arabeyes, Taha Zerrouki
+@license: GPL
+@date:2017/02/15
+@version:0.3
 """
 import re
 import tashaphyne.arabic_const as arabconst
-
 
 ######################################################################
 #{ Indivudual Functions
@@ -14,7 +21,7 @@ import tashaphyne.arabic_const as arabconst
 #--------------------------------------
 def strip_tashkeel(text):
     """Strip vowel from a text and return a result text.
-    The striped marks are : 
+    The striped marks are :
         - FATHA, DAMMA, KASRA
         - SUKUN
         - SHADDA
@@ -48,15 +55,16 @@ def strip_tatweel(text):
     @return: return a striped text.
     @rtype: unicode.
     """
-    return re.sub(u'[%s]' % arabconst.TATWEEL,    '', text)
+    return re.sub(u'[%s]' % arabconst.TATWEEL, '', text)
 
 
 #--------------------------------------
 def normalize_hamza(text):
     """Normalize Hamza forms into one form, and return a result text.
-    The converted letters are : 
-        - The converted lettersinto HAMZA are: WAW_HAMZA,YEH_HAMZA 
-        - The converted lettersinto ALEF are: ALEF_MADDA, ALEF_HAMZA_ABOVE, ALEF_HAMZA_BELOW ,HAMZA_ABOVE, HAMZA_BELOW 
+    The converted letters are :
+        - The converted lettersinto HAMZA are: WAW_HAMZA,YEH_HAMZA
+        - The converted lettersinto ALEF are: ALEF_MADDA,
+        ALEF_HAMZA_ABOVE, ALEF_HAMZA_BELOW ,HAMZA_ABOVE, HAMZA_BELOW
 
     Example:
         >>> text=u"أهؤلاء من أولئكُ"
@@ -73,11 +81,13 @@ def normalize_hamza(text):
 
 #--------------------------------------
 def normalize_lamalef(text):
-    """Normalize Lam Alef ligatures into two letters (LAM and ALEF), 
+    """Normalize Lam Alef ligatures into two letters (LAM and ALEF),
     and return a result text.
-    Some systems present lamAlef ligature as a single letter, this function convert it into two letters,
-    The converted letters into  LAM and ALEF are : 
-        - LAM_ALEF, LAM_ALEF_HAMZA_ABOVE, LAM_ALEF_HAMZA_BELOW, LAM_ALEF_MADDA_ABOVE
+    Some systems present lamAlef ligature as a single letter,
+    this function convert it into two letters,
+    The converted letters into  LAM and ALEF are :
+        - LAM_ALEF, LAM_ALEF_HAMZA_ABOVE, LAM_ALEF_HAMZA_BELOW,
+         LAM_ALEF_MADDA_ABOVE
 
     Example:
         >>> text=u"لانها لالئ الاسلام"
@@ -94,9 +104,11 @@ def normalize_lamalef(text):
 
 #--------------------------------------
 def normalize_spellerrors(text):
-    """Normalize some spellerrors like, 
-    TEH_MARBUTA into HEH,ALEF_MAKSURA into YEH,  and return a result text.
-    In some context users omit the difference between TEH_MARBUTA and HEH, and ALEF_MAKSURA and YEh.
+    """Normalize some spellerrors like,
+    TEH_MARBUTA into HEH,ALEF_MAKSURA into YEH, and return
+    a result text.
+    In some context users omit the difference between TEH_MARBUTA
+    and HEH, and ALEF_MAKSURA and YEh.
     The conversions are:
         - TEH_MARBUTA into HEH
         - ALEF_MAKSURA into YEH
@@ -109,10 +121,10 @@ def normalize_spellerrors(text):
     @param text: arabic text.
     @type text: unicode.
     @return: return a converted text.
-    @rtype: unicode. 
+    @rtype: unicode.
     """
-    text = re.sub(u'[%s]' % arabconst.TEH_MARBUTA,    arabconst.HEH, text)
-    return re.sub(u'[%s]' % arabconst.ALEF_MAKSURA,    arabconst.YEH, text)
+    text = re.sub(u'[%s]' % arabconst.TEH_MARBUTA, arabconst.HEH, text)
+    return re.sub(u'[%s]' % arabconst.ALEF_MAKSURA, arabconst.YEH, text)
 
 ######################################################################
 #{ Normalize One Function
@@ -134,7 +146,7 @@ def normalize_searchtext(text):
     @param text: arabic text.
     @type text: unicode.
     @return: return a normalized text.
-    @rtype: unicode. 
+    @rtype: unicode.
     """
     text = strip_tashkeel(text)
     text = strip_tatweel(text)

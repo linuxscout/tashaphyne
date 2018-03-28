@@ -21,7 +21,12 @@ md2html:
 	
 wheel:
 	sudo python setup.py bdist_wheel
+wheel3:
+	sudo python3 setup.py bdist_wheel
 sdist:
 	sudo python setup.py sdist
 upload:
 	echo "use twine upload dist/Tashaphyne-0.3-py2-none-any.whl"
+
+doc:
+	epydoc -v --config epydoc.conf

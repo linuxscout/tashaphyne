@@ -55,7 +55,7 @@ def strip_tatweel(text):
     @return: return a striped text.
     @rtype: unicode.
     """
-    return re.sub(u'[%s]' % arabconst.TATWEEL, '', text)
+    return re.sub(ur'[%s]' % arabconst.TATWEEL, '', text)
 
 
 #--------------------------------------
@@ -123,8 +123,8 @@ def normalize_spellerrors(text):
     @return: return a converted text.
     @rtype: unicode.
     """
-    text = re.sub(u'[%s]' % arabconst.TEH_MARBUTA, arabconst.HEH, text)
-    return re.sub(u'[%s]' % arabconst.ALEF_MAKSURA, arabconst.YEH, text)
+    text = re.sub(ur'[%s]' % arabconst.TEH_MARBUTA, arabconst.HEH, text)
+    return re.sub(ur'[%s]' % arabconst.ALEF_MAKSURA, arabconst.YEH, text)
 
 ######################################################################
 #{ Normalize One Function

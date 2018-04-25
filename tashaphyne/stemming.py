@@ -25,7 +25,12 @@ Features:
 @date:2017/02/15
 @version:0.3
 """
-from __future__ import absolute_import
+from __future__ import (
+    absolute_import,
+    print_function,
+    unicode_literals,
+    division,
+    )
 import  re
 import sys
 sys.path.append('../support/')
@@ -87,7 +92,7 @@ class ArabicLightStemmer:
         self.segment_list = []
         #token pattern
         # letters and harakat
-        self.token_pat = re.compile(ur"[^\w\u064b-\u0652']+", re.UNICODE)
+        self.token_pat = re.compile(u"[^\w\u064b-\u0652']+", re.UNICODE)
         self.prefixes_tree = self._create_prefix_tree(self.prefix_list)
         self.suffixes_tree = self._create_suffix_tree(self.suffix_list)
     ######################################################################
@@ -438,7 +443,7 @@ class ArabicLightStemmer:
             if suffix_index >= 0:
                 right = suffix_index
             if self.infix_letters != "":
-                newstarstem = re.sub(ur"[^%s]"%self.infix_letters, \
+                newstarstem = re.sub(u"[^%s]"%self.infix_letters, \
                    self.joker, self.starword[left:right])
             else:
                 newstarstem = self.joker*len(self.starword[left:right])
@@ -603,8 +608,8 @@ class ArabicLightStemmer:
         word = araby.strip_tashkeel(word)
         # word, harakat = araby.separate(word)
         self.unvocalized = word
-        word = re.sub(ur"[%s]"%(araby.ALEF_MADDA), araby.HAMZA+araby.ALEF, word)
-        word = re.sub(ur"[^%s%s]"%(self.prefix_letters, self.suffix_letters), \
+        word = re.sub(u"[%s]"%(araby.ALEF_MADDA), araby.HAMZA+araby.ALEF, word)
+        word = re.sub(u"[^%s%s]"%(self.prefix_letters, self.suffix_letters), \
          self.joker, word)
         #~ ln = len(word)
         left = word.find(self.joker)
@@ -615,11 +620,11 @@ class ArabicLightStemmer:
             prefix = word[:left]
             stem = word[left:right]
             suffix = word[right:]
-            prefix = re.sub(ur"[^%s]"%self.prefix_letters, self.joker, prefix)
+            prefix = re.sub(u"[^%s]"%self.prefix_letters, self.joker, prefix)
             # avoid null infixes
             if self.infix_letters:
-                stem = re.sub(ur"[^%s]"%self.infix_letters, self.joker, stem)
-            suffix = re.sub(ur"[^%s]"%self.suffix_letters, self.joker, suffix)
+                stem = re.sub(u"[^%s]"%self.infix_letters, self.joker, stem)
+            suffix = re.sub(u"[^%s]"%self.suffix_letters, self.joker, suffix)
             word = prefix+stem+suffix
 
         left = word.find(self.joker)
@@ -648,7 +653,7 @@ class ArabicLightStemmer:
             #the border of the stem.
             #substitute all non infixes letters
             if self.infix_letters != "":
-                stem = re.sub(ur"[^%s]"%self.infix_letters, self.joker, stem)
+                stem = re.sub(u"[^%s]"%self.infix_letters, self.joker, stem)
 
             # substitube teh in infixes the teh mst be in the first
             # or second place, all others, are converted
@@ -824,7 +829,7 @@ class ArabicLightStemmer:
         self.word = word
         self.unvocalized = araby.strip_tashkeel(word)
         # word, harakat = araby.separate(word)
-        word = re.sub(ur"[%s]"%(araby.ALEF_MADDA), araby.HAMZA+araby.ALEF, word)
+        word = re.sub(u"[%s]"%(araby.ALEF_MADDA), araby.HAMZA+araby.ALEF, word)
 
         # get all lefts position of prefixes
         lefts = self.lookup_prefixes(word)

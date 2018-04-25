@@ -1,4 +1,6 @@
-﻿from Tashaphyne.stemming import *
+﻿#!/usr/bin/python
+# -*- coding=utf-8 -*-
+from tashaphyne.stemming import *
 word=u"أفتضربونها"
 word=u'‫أإنكم'
 word_list =(
@@ -21,10 +23,11 @@ u'الله',
 u'لهن',
 u'بسم',
 u'فضَرَبْتُموهنَ',
+u'فسيستعملونهما',
 )
 als=ArabicLightStemmer();
 for word in word_list:
-    newword= als.lightStem(word);
+    newword= als.light_stem(word);
     stem=als.get_stem()
     prefix=als.get_prefix()
     suffix=als.get_suffix()

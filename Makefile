@@ -23,6 +23,10 @@ wheel:
 	sudo python setup.py bdist_wheel
 wheel3:
 	sudo python3 setup.py bdist_wheel
+install:
+	sudo python setup.py install
+install3:
+	sudo python3 setup.py install
 sdist:
 	sudo python setup.py sdist
 upload:

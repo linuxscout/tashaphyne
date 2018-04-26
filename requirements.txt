@@ -1,0 +1,2 @@
+setuptools==39.0.1
+pyarabic>=0.6.4

@@ -1,7 +1,14 @@
 # Tashaphyne
-=======
-Tashaphyne: Arabic Light Stemmer تاشفين: التجذيع الخفيف للنصوص العربية
 
+**Tashaphyne**: Arabic Light Stemmer تاشفين: التجذيع الخفيف للنصوص العربية
+
+**Tashaphyne** is an Arabic light stemmer and segmentor. It mainly supports light stemming (removing prefixes and suffixes) and give all possible segmentations. It use a modified finite state Automaton which allow to generate all segmentations.
+
+It offers stemming and root extraction at the same time unlike Khoja stemmer, ISRI semmer, Assem stemmer, Farasa stemmer.
+
+**Tashaphyne** comes with default prefixes and suffixes, and accept the use of customized prefixes and suffixes list, which allow it to handle more aspect, and make customized stemmers without changing code.
+
+**Tashaphyne** is a python library, it's available as demo on  [Mishkal](http://tahadz.com/mishkal), choose Tools/Analysis and as source code on [Github](http://github.com/linuxscout/tashaphyne) 
 
   Developpers:  Taha Zerrouki: http://tahadz.com
     taha dot zerrouki at gmail dot com

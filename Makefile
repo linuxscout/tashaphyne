@@ -31,6 +31,6 @@ sdist:
 	sudo python setup.py sdist
 upload:
 	echo "use twine upload dist/Tashaphyne-0.3-py2-none-any.whl"
-
+build: wheel wheel3 sdist
 doc:
 	epydoc -v --config epydoc.conf

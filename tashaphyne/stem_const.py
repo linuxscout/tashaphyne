@@ -5,7 +5,8 @@ Constants used for stemming module
 """
 DEFAULT_PREFIX_LETTERS = u"مأسفلونيتاكب"
 DEFAULT_SUFFIX_LETTERS = u"امتةكنهوي"
-DEFAULT_INFIX_LETTERS = u"ويدط"
+#DEFAULT_INFIX_LETTERS = u"ويدط"
+DEFAULT_INFIX_LETTERS = u"اتويطد"
 DEFAULT_MAX_PREFIX = 6
 DEFAULT_MAX_SUFFIX = 5
 DEFAULT_MIN_STEM = 3
@@ -227,6 +228,34 @@ DEFAULT_PREFIX_LIST = (
     u'يت',
     u'يست',
     u'ين',
+#review added
+    u'لن',
+    u'لنست',
+    u'لنت',
+    u'لي',
+    u'ليست',
+    u'ليت',
+    u'لت',
+    u'لتست',
+    u'لتت',
+    u'ولن',
+    u'ولنست',
+    u'ولنت',
+    u'ولي',
+    u'وليست',
+    u'وليت',
+    u'ولت',
+    u'ولتست',
+    u'ولتت',
+    u'فلن',
+    u'فلنست',
+    u'فلنت',
+    u'فلي',
+    u'فليست',
+    u'فليت',
+    u'فلت',
+    u'فلتست',
+    u'فلتت',
 )
 
 DEFAULT_SUFFIX_LIST = (
@@ -499,4 +528,31 @@ DEFAULT_SUFFIX_LIST = (
 #add missed suffixes
     u'ات',
     u'يات',
+    #reviewed 
+    u'اء',
+    u'ى',
+    u"كهم",
+    u"كهن",
+    u"كهما",
+    u"كه",
+    u'اته',
+    u'اتها',
+    u'اتهم',
+    u'اتهن',
+    u'اتهما',
+    u'اتك',
+    u'اتكا',
+    u'اتكم',
+    u'اتكن',
+    u'اتكما',
+    u'اؤك',
+    u'اؤكم',
+    u'اؤكما',
+    u'اؤكن',
+    u'اؤنا',
+    u'اؤه',
+    u'اؤها',
+    u'اؤهم',
+    u'اؤهما',
+    u'اؤهن',    
 )

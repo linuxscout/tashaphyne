@@ -39,10 +39,11 @@ if __name__ == "__main__":
     sys.path.append('../')
     import normalize
     import stem_const
+    import roots_const      
 else:
     from . import normalize
     from . import stem_const
-
+    from . import roots_const  
 
 class ArabicLightStemmer:
     """
@@ -308,10 +309,33 @@ class ArabicLightStemmer:
         @return: root.
         @rtype: unicode.
         """
+        # extract a root for a specific stem
         if prefix_index >= 0 or suffix_index >= 0:
             self.extract_root(prefix_index, suffix_index)
+        else:
+            self.root = self.choose_root()
         return self.root
+    def choose_root(self,):
+        """ choose a root for the given word """
+        if not self.segment_list:
+            self.segment()
+        affix_list = self.get_affix_list()
+        roots = [d['root'] for d in affix_list]
+        # filter by length
+        roots_tmp = roots
+        accepted = list(filter(self.is_root_length_valid, roots_tmp))
+        if accepted: # avoid empty list
+           roots_tmp = accepted
+        # filter by dictionary
+        accepted = list(filter(self.is_root, roots_tmp)        )
+        if accepted: # avoid empty list
+           roots_tmp = accepted
+        # choose the most frequent root
+        accepted_root = self.most_common(roots_tmp)
+        
+        return accepted_root
 
+      
     def get_normalized(self):
         """ return the normalized form of the treated word by the stemmer.
         Some letters are converted into normal form like Hamzat.
@@ -410,6 +434,27 @@ class ArabicLightStemmer:
             right = suffix_index
         return self.unvocalized[left:right]
 
+    def _handle_teh_infix(self, starword, left, right):
+        """
+        Handle case of Teh as infix.
+        The Teh can be Dal after Zain, and Tah after Dhad
+        """
+        newstarstem = starword
+        # substitube teh in infixes the teh mst be in the first
+        # or second place, all others, are converted
+        newstarstem = newstarstem[:2]+re.sub(araby.TEH, self.joker, newstarstem[2:])
+        # Tah طاء is infix if it's preceded by DHAD only
+        if self.word[left:right].startswith(u"ضط"):
+            newstarstem = newstarstem[:2]+re.sub(araby.TAH, self.joker, newstarstem[2:])
+        else:
+            newstarstem = re.sub(araby.TAH, self.joker, newstarstem)
+        # DAL دال  is infix if it's preceded by زاي only
+        if  self.word[left:right].startswith(u"زد"):
+            newstarstem = newstarstem[:2]+re.sub(araby.DAL, self.joker, newstarstem[2:])
+        else:
+            newstarstem = re.sub(araby.DAL, self.joker, newstarstem)
+        return newstarstem
+        
     def get_starstem(self, prefix_index=-1, suffix_index=-1):
         """ return the star form stem of the treated word by the stemmer.
         All non affix letters are converted to a joker.
@@ -433,8 +478,10 @@ class ArabicLightStemmer:
         @return: stared form of stem.
         @rtype: unicode.
         """
+        #~ starword = self.starword
+        starword = self.word
         if prefix_index < 0 and suffix_index < 0:
-            return self.starword[self.left:self.right]
+            return starword[self.left:self.right]
         else:
             left = self.left
             right = self.right
@@ -443,15 +490,15 @@ class ArabicLightStemmer:
             if suffix_index >= 0:
                 right = suffix_index
             if self.infix_letters != "":
-                newstarstem = re.sub(u"[^%s]"%self.infix_letters, \
-                   self.joker, self.starword[left:right])
+                newstarstem = re.sub(u"[^%s%s]"%(self.infix_letters, araby.TEH_MARBUTA), \
+                   self.joker, starword[left:right])
+                # substitube teh in infixes the teh mst be in the first
+                # or second place, all others, are converted
+                newstarstem = self._handle_teh_infix(newstarstem, left, right)
             else:
-                newstarstem = self.joker*len(self.starword[left:right])
-
+                newstarstem = self.joker*len(starword[left:right])
+            #~ print("star word", starword, newstarstem)
             return newstarstem
-
-    # def get_prefix(self):
-        # return self.unvocalized[:self.left]
 
     def get_prefix(self, prefix_index=-1):
         """ return the prefix of the treated word by the stemmer.
@@ -541,6 +588,7 @@ class ArabicLightStemmer:
             'prefix':self.get_prefix(prefix_index),
             'suffix':self.get_suffix(suffix_index),
             'stem':self.get_stem(prefix_index, suffix_index),
+            'starstem':self.get_starstem(prefix_index, suffix_index),
             'root':self.get_root(prefix_index, suffix_index),
         }
     #########################################################
@@ -576,9 +624,10 @@ class ArabicLightStemmer:
         if word == u'':
             return u''
         #~ starword, left, right = self.transform2stars(word)
-        self.transform2stars(word)
-
-        #consititute the root
+        #~ self.transform2stars(word)
+        # segment
+        self.segment(word)
+        #constitute the root
         self.extract_root()
         return self.get_stem()
 
@@ -609,6 +658,7 @@ class ArabicLightStemmer:
         # word, harakat = araby.separate(word)
         self.unvocalized = word
         word = re.sub(u"[%s]"%(araby.ALEF_MADDA), araby.HAMZA+araby.ALEF, word)
+        #~ word = re.sub(u"[^%s%s%s]"%(self.prefix_letters, self.suffix_letters, self.infix_letters), \
         word = re.sub(u"[^%s%s]"%(self.prefix_letters, self.suffix_letters), \
          self.joker, word)
         #~ ln = len(word)
@@ -618,7 +668,8 @@ class ArabicLightStemmer:
             left = min(left, self.max_prefix_length-1)
             right = max(right+1, len(word)-self.max_suffix_length)
             prefix = word[:left]
-            stem = word[left:right]
+            #stem get the original word and make all letters as jokers except infixes
+            stem = self.word[left:right]
             suffix = word[right:]
             prefix = re.sub(u"[^%s]"%self.prefix_letters, self.joker, prefix)
             # avoid null infixes
@@ -642,23 +693,19 @@ class ArabicLightStemmer:
                 right = max(len(prefix), len(word)-self.max_suffix_length)
             suffix = word[right:]
 
-            while suffix != "" and suffix not in self.suffix_list:
+            while suffix and suffix not in self.suffix_list:
                 suffix = suffix[1:]
             left = len(prefix)
             right = len(word)-len(suffix)
-            stem = word[left:right]
+            #stem get the original word and make all letters as jokers except infixes
+            stem = self.word[left:right]
             # convert stem into  stars.
             # a stem must starts with alef, or end with alef.
             # any other infixes letter isnt infixe at
             #the border of the stem.
             #substitute all non infixes letters
-            if self.infix_letters != "":
+            if self.infix_letters:
                 stem = re.sub(u"[^%s]"%self.infix_letters, self.joker, stem)
-
-            # substitube teh in infixes the teh mst be in the first
-            # or second place, all others, are converted
-            #
-            # stem = stem[:2]+re.sub(TEH, self.joker, stem[2:])
             word = prefix+stem+suffix
         # store result
         self.left = left
@@ -703,6 +750,11 @@ class ArabicLightStemmer:
                     root += char
         else:
             root = stem
+        # normalize root
+        root = self.normalize_root(root)
+        #controls on root letters and length
+        #~ if not self.is_root_length_valid(root):
+            #~ root = ""
         self.root = root
         return root
 
@@ -934,52 +986,89 @@ class ArabicLightStemmer:
                 mylist.remove(u'')
             return mylist
 
+    @staticmethod
+    def normalize_root(word):
+        """ test if word is a root"""
+        # change alef madda to hamza + ALEF
+        word = word.replace(araby.ALEF_MADDA, araby.HAMZA+ araby.ALEF)
+        word = word.replace(araby.TEH_MARBUTA, '')
+        word = word.replace(araby.ALEF_MAKSURA, araby.YEH)
+        return araby.normalize_hamza(word)
+
+    @staticmethod
+    def is_root_length_valid(root):
+        
+        return (len(root) >= 2 and len(root)<=4)
+    
+    @staticmethod
+    def most_common(lst):
+        triroots = [x for x in lst if len(x) == 3]
+        if triroots:
+            lst = triroots
+        return max(set(lst), key=lst.count)
+    @staticmethod
+    def is_root(word):
+        """ test if word is a root"""
+        return word in roots_const.ROOTS  
+
 if __name__ == "__main__":
-    #~ import pyarabic.arabrepr
-    #~ arepr = pyarabic.arabrepr.ArabicRepr()
-    #~ repr = arepr.repr
-
+    #~ from pyarabic.arabrepr import arepr
     ARLISTEM = ArabicLightStemmer()
-    WORD = u'أفتضاربانني'
-    # stemming word
-    ARLISTEM.light_stem(WORD)
-    # extract stem
-    print(ARLISTEM.get_stem())
-    # extract root
-    print(ARLISTEM.get_root())
+    wordlist =[u'أفتضاربانني',
+    u'بالمكتبة',
+    u'مزدهرة', 
+    u'كاتب', 
 
-    # get prefix position index
-    print(ARLISTEM.get_left())
-    # get prefix
-    print(ARLISTEM.get_prefix())
-    # get prefix with a specific index
-    print(ARLISTEM.get_prefix(2))
+    u'مضروب',
+    u'مضارب',
+    u"مردود",
+    u"مطلوب",
+    u"مشتت",
+        u'مزتهرة',
+    u'مضطرب',
+    
+    ]
+    for word in wordlist:
+        # stemming word
+        ARLISTEM.light_stem(word)
+        # extract stem
+        print(ARLISTEM.get_stem())
+        print(ARLISTEM.infix_letters)
+        # extract root
+        print("root:", ARLISTEM.get_root())
 
-    # get suffix position index
-    print(ARLISTEM.get_right())
-    # get suffix
-    print(ARLISTEM.get_suffix())
-    # get suffix with a specific index
-    print(ARLISTEM.get_suffix(10))
-    # get affix tuple
-    print(repr(ARLISTEM.get_affix_tuple()))
+        # get prefix position index
+        print(ARLISTEM.get_left())
+        # get prefix
+        print(ARLISTEM.get_prefix())
+        # get prefix with a specific index
+        print(ARLISTEM.get_prefix(2))
+
+        # get suffix position index
+        print(ARLISTEM.get_right())
+        # get suffix
+        print(ARLISTEM.get_suffix())
+        # get suffix with a specific index
+        print(ARLISTEM.get_suffix(10))
+        # get affix tuple
+        print(ARLISTEM.get_affix_tuple())
 
 
-    # star words
-    print(ARLISTEM.get_starword())
-    # get star stem
-    print(ARLISTEM.get_starstem())
+        # star words
+        print(ARLISTEM.get_starword())
+        # get star stem
+        print(ARLISTEM.get_starstem())
 
-    #  get normalized word
-    print(ARLISTEM.get_normalized())
-    #  get unvocalized word
-    print(ARLISTEM.get_unvocalized())
+        #  get normalized word
+        print(ARLISTEM.get_normalized())
+        #  get unvocalized word
+        print(ARLISTEM.get_unvocalized())
 
-    # Detect all possible segmentation
-    print(ARLISTEM.segment(WORD))
-    print(ARLISTEM.get_segment_list())
-    # get affix list
-    print(ARLISTEM.get_affix_list())
+        # Detect all possible segmentation
+        print(ARLISTEM.segment(word))
+        print(ARLISTEM.get_segment_list())
+        # get affix list
+        print(ARLISTEM.get_affix_list())
 
 
 

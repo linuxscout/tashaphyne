@@ -315,10 +315,11 @@ class ArabicLightStemmer:
         else:
             self.root = self.choose_root()
         return self.root
+
     def choose_root(self,):
         """ choose a root for the given word """
         if not self.segment_list:
-            self.segment()
+            self.segment(self.word)
         affix_list = self.get_affix_list()
         roots = [d['root'] for d in affix_list]
         # filter by length
@@ -334,7 +335,25 @@ class ArabicLightStemmer:
         accepted_root = self.most_common(roots_tmp)
         
         return accepted_root
+    
+    def _choose_stem(self,):
+        """ choose a stem for the given word """
+        if not self.segment_list:
+            self.segment(self.word)
+        affix_list = self.get_affix_list()
+        
+        stems = [d['stem'] for d in affix_list]
+        
+        # filter by length
+        # avoid short stems
+        stems_tmp = stems
+        accepted = [x for x in stems_tmp if len(x) >= 2]
+        if accepted: # avoid empty list
+           stems_tmp = accepted
+        # choose the most frequent stem
+        accepted_stem = self.most_common(stems_tmp)
 
+        return accepted_stem
       
     def get_normalized(self):
         """ return the normalized form of the treated word by the stemmer.
@@ -424,12 +443,15 @@ class ArabicLightStemmer:
         @return: stem.
         @rtype: unicode.
         """
+        #~ # ask for default stem
+        #~ if prefix_index < 0 and suffix_index < 0:
+            #~ return self._choose_stem()
         if prefix_index < 0:
-            left = self.left
+            left = self.stem_left
         else:
             left = prefix_index
         if suffix_index < 0:
-            right = self.right
+            right = self.stem_right
         else:
             right = suffix_index
         return self.unvocalized[left:right]
@@ -440,6 +462,12 @@ class ArabicLightStemmer:
         The Teh can be Dal after Zain, and Tah after Dhad
         """
         newstarstem = starword
+        # case of Teh marbuta
+        key_stem = newstarstem.replace(araby.TEH_MARBUTA,'')
+        if len(key_stem) != 4:
+            # apply teh and variants only one stem has 4 letters
+            newstarstem = re.sub(u"[%s%s%s]"%(araby.TEH, araby.TAH, araby.DAL), self.joker, newstarstem)
+            return newstarstem
         # substitube teh in infixes the teh mst be in the first
         # or second place, all others, are converted
         newstarstem = newstarstem[:2]+re.sub(araby.TEH, self.joker, newstarstem[2:])
@@ -624,7 +652,7 @@ class ArabicLightStemmer:
         if word == u'':
             return u''
         #~ starword, left, right = self.transform2stars(word)
-        #~ self.transform2stars(word)
+        self.transform2stars(word)
         # segment
         self.segment(word)
         #constitute the root
@@ -708,8 +736,8 @@ class ArabicLightStemmer:
                 stem = re.sub(u"[^%s]"%self.infix_letters, self.joker, stem)
             word = prefix+stem+suffix
         # store result
-        self.left = left
-        self.right = right
+        self.stem_left = left
+        self.stem_right = right
         self.starword = word
         self.extract_root()
         # return starword, left, right position of stem
@@ -740,9 +768,13 @@ class ArabicLightStemmer:
         @return: root.
         @rtype: unicode.
         """
-
-        starstem = self.get_starstem(prefix_index, suffix_index)
         stem = self.get_stem(prefix_index, suffix_index)
+        root = u""
+        # if the stem has 3 letters it can be the root directly
+        if len(stem) == 3:
+            self.root = self._ajust_root(root, stem)
+            return self.root
+        starstem = self.get_starstem(prefix_index, suffix_index)
         root = u""
         if len(starstem) == len(stem):
             for i, char in enumerate(stem):
@@ -755,10 +787,43 @@ class ArabicLightStemmer:
         #controls on root letters and length
         #~ if not self.is_root_length_valid(root):
             #~ root = ""
+        if len(root) == 2:
+            root = self._ajust_root(root, starstem)
         self.root = root
         return root
 
-
+    def _ajust_root(self, root, starstem):
+        """
+        If the root has only three or two letters, we complete it by another letter
+        """
+        if not starstem:
+            return root
+        if len(starstem) == 3:
+            starstem = starstem.replace(araby.ALEF, araby.WAW)
+            starstem = starstem.replace(araby.ALEF_MAKSURA, araby.YEH)
+            return starstem
+        # The starstem can starts with a joker (*) or a infix letter
+        # add a letter at the begining
+        first = starstem[0]
+        last = starstem[-1:]
+        if first in (araby.ALEF, araby.WAW):
+            root = araby.WAW + root
+        elif first == araby.YEH:
+            root = araby.YEH + root
+        elif first == self.joker and last in (araby.ALEF, araby.WAW):
+            root += araby.WAW
+        elif first == self.joker and last in (araby.ALEF_MAKSURA, araby.YEH):
+            root += araby.WAW
+        elif first == self.joker and last == self.joker:
+            # if lenght == 2, is doubled verb
+            if len(starstem) == 2:
+                root += root[-1]
+            else:
+                # I choose WAW because it's frequent
+                root = root[0]+ araby.WAW+ root[1]
+        return root
+        
+        
     def _create_prefix_tree(self, prefixes):
         """
         Create a prefixes tree from given prefixes list
@@ -1012,7 +1077,7 @@ class ArabicLightStemmer:
         return word in roots_const.ROOTS  
 
 if __name__ == "__main__":
-    #~ from pyarabic.arabrepr import arepr
+    from pyarabic.arabrepr import arepr as repr
     ARLISTEM = ArabicLightStemmer()
     wordlist =[u'أفتضاربانني',
     u'بالمكتبة',
@@ -1026,7 +1091,8 @@ if __name__ == "__main__":
     u"مشتت",
         u'مزتهرة',
     u'مضطرب',
-    
+    u'بالمكتبة',
+    u"مكتوب", 
     ]
     for word in wordlist:
         # stemming word
@@ -1068,7 +1134,7 @@ if __name__ == "__main__":
         print(ARLISTEM.segment(word))
         print(ARLISTEM.get_segment_list())
         # get affix list
-        print(ARLISTEM.get_affix_list())
+        print(repr(ARLISTEM.get_affix_list()))
 
 
 

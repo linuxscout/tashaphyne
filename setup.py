@@ -6,12 +6,12 @@ from setuptools import setup
 def readme():
     with open('README.rst') as f:
         return f.read()
-setup (name='Tashaphyne', version='0.3.3.2',
+setup (name='Tashaphyne', version='0.3.3.3',
       description='Tashaphyne Arabic Light Stemmer',
       long_description = readme(),      
       author='Taha Zerrouki',
       author_email='taha.zerrouki@gmail.com',
-      url='http://tashaphyne.sourceforge.net/',
+      url='http://github.com/linuxscout/tashaphyne/',
       license='GPL',
       package_dir={'tashaphyne': 'tashaphyne',},
       packages=['tashaphyne'],

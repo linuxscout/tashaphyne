@@ -1252,6 +1252,9 @@ if __name__ == "__main__":
     u"الآجال", 
     u"بالبلدان", 
     u"وفيهما", 
+    u"1245", 
+    u"Taha", 
+    u"@", 
     ]
     for word in wordlist:
         # stemming word

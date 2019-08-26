@@ -1,0 +1,5860 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+<teiHeader>
+<name>Arabic Stemming Gold Standard</name>
+</teiHeader>
+<text>
+<phr><val>عليكم بالجد فإنه أساس النجاح</val>		
+	<w rend="عليكم"><choice n="14">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">علِيَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">على</m>
+					<m type="stem">عَلَي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيٍّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عَلْي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عُلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وعل</m>
+					<m type="stem">عِلِي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عِلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عِلِّي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلْي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">ي</m>
+		</seg>
+	</choice></w><w rend="بالجد"><choice n="3">	
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">جدد</m>
+					<m type="stem">جُدِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">جدد</m>
+					<m type="stem">جَدِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">جدد</m>
+					<m type="stem">جِدِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="فإنه"><choice n="4">	
+		<seg>
+			<m type="prefix">ف</m>
+				<form type="base">
+					<m type="root">إن</m>
+					<m type="stem">إنْ</m>
+				</form>
+			<m type="suffix">ه</m>
+		</seg>
+		<seg>
+			<m type="prefix">ف</m>
+				<form type="base">
+					<m type="root">إن</m>
+					<m type="stem">إِنَّ</m>
+				</form>
+			<m type="suffix">ه</m>
+		</seg>
+		<seg>
+			<m type="prefix">ف</m>
+				<form type="base">
+					<m type="root">ءنن</m>
+					<m type="stem">إِنْ</m>
+				</form>
+			<m type="suffix">ه</m>
+		</seg>
+		<seg>
+			<m type="prefix">ف</m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">إِنْهِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أساس"><choice n="4">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءسس</m>
+					<m type="stem">أَسَاسُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">سوس</m>
+					<m type="stem">أَسَاسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءسس</m>
+					<m type="stem">أَسَّاس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">سوس / سيس</m>
+					<m type="stem">سَاسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="النجاح"><choice n="4">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">نجح / جوح / جيح</m>
+					<m type="stem">نجاح</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">نجح</m>
+					<m type="stem">نَجاح</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">نجح</m>
+					<m type="stem">نَجَاح</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">نجح</m>
+					<m type="stem">نَجَّاح</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>ألقى العالم محاضرته في الوقت المحدد</val>		
+	<w rend="ألقى"><choice n="7">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"> لقو</m>
+					<m type="stem">ألقى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"> لقو</m>
+					<m type="stem">أَلْقَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"> لقو</m>
+					<m type="stem">أُلْقَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">لقي</m>
+					<m type="stem">لقَّى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">لقي</m>
+					<m type="stem">لَقَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">لقي</m>
+					<m type="stem">لَقَّى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">لقي</m>
+					<m type="stem">لُقًى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="العالم"><choice n="3">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عالِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَالَم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَالِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="محاضرته"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">حضر</m>
+					<m type="stem">مُحَاضَرَة</m>
+				</form>
+			<m type="suffix">ة</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">حضر</m>
+					<m type="stem">مُحَاضِرَة</m>
+				</form>
+			<m type="suffix">ة</m>
+		</seg>
+	</choice></w><w rend="في"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وفي</m>
+					<m type="stem">في</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">في</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الوقت"><choice n="1">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">وقت</m>
+					<m type="stem">وَقْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="المحدد"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حدد</m>
+					<m type="stem">مُحَدَّد</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حدد</m>
+					<m type="stem">مُحَدِّد</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>وكالخاشعة أبصارهم يترقبون</val>		
+	<w rend="وكالخاشعة"><choice n="1">	
+		<seg>
+			<m type="prefix">وكال</m>
+				<form type="base">
+					<m type="root">خشع</m>
+					<m type="stem">خَاشِعَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أبصارهم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">بصر</m>
+					<m type="stem">أَبْصَار</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">بصر</m>
+					<m type="stem">بَصار</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">بصر</m>
+					<m type="stem">بِصَار</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أب</m>
+				<form type="base">
+					<m type="root">صرر</m>
+					<m type="stem">صَارِّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أب</m>
+				<form type="base">
+					<m type="root">صير</m>
+					<m type="stem">صَارَ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="يترقبون"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">رقب</m>
+					<m type="stem">يَتَرَقَّبُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوبالكتاب تستأنس أم بالموسيقى ؟</val>		
+	<w rend="أوبالكتاب"><choice n="3">	
+		<seg>
+			<m type="prefix">أوبال</m>
+				<form type="base">
+					<m type="root">كتب</m>
+					<m type="stem">كَتَّاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوبال</m>
+				<form type="base">
+					<m type="root">كتب</m>
+					<m type="stem">كُتَّاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوبال</m>
+				<form type="base">
+					<m type="root">كتب</m>
+					<m type="stem">كِتَاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="تستأنس"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءنس</m>
+					<m type="stem">تَسْتَأْنِس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءم</m>
+					<m type="stem">أَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="بالموسيقى"><choice n="1">	
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">موسيقى</m>
+					<m type="stem">مُوسِيقَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفتطمعون أن يؤمنوا لكم</val>		
+	<w rend="أفتطمعون"><choice n="5">	
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">طمع</m>
+					<m type="stem">تَطْمَعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">طمع</m>
+					<m type="stem">تُطَمَّعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">طمع</m>
+					<m type="stem">تُطَمِّعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">طمع</m>
+					<m type="stem">تُطْمَعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">طمع</m>
+					<m type="stem">تُطْمِعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أن"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءن</m>
+					<m type="stem">أنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءنن</m>
+					<m type="stem">أَنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءن</m>
+					<m type="stem">أَنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءنن</m>
+					<m type="stem">أُن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءنن</m>
+					<m type="stem">أُنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="يؤمنوا"><choice n="4">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">يُؤَمَّنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">يُؤَمِّنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">يُؤْمَنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">يُؤْمِنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لكم"><choice n="10">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لكم</m>
+					<m type="stem">لُكَمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لكم</m>
+					<m type="stem">لَكَمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لكم</m>
+					<m type="stem">لَكْم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لكم</m>
+					<m type="stem">لُكِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كمم</m>
+					<m type="stem">كُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كمم</m>
+					<m type="stem">كَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كم</m>
+					<m type="stem">كَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كوم</m>
+					<m type="stem">كُمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كمم</m>
+					<m type="stem">كِمّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>وسأستغفر لهم أجمعين</val>		
+	<w rend="وسأستغفر"><choice n="2">	
+		<seg>
+			<m type="prefix">وس</m>
+				<form type="base">
+					<m type="root">غفر</m>
+					<m type="stem">أَسْتَغْفِر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">وس</m>
+				<form type="base">
+					<m type="root">غفر</m>
+					<m type="stem">أُسْتَغْفَر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لهم"><choice n="14">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لهِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهَم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهَمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهْم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لُهَم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لُهِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">هيم</m>
+					<m type="stem">هِمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هِمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أجمعين"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem">أَجْمَعِينَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem">جَمْعَيْنِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>فبالرحمة هم يدعون لهم</val>		
+	<w rend="فبالرحمة"><choice n="">	
+		<seg>
+			<m type="prefix">فبال</m>
+				<form type="base">
+					<m type="root">رحم</m>
+					<m type="stem">رَحْمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">فبال</m>
+				<form type="base">
+					<m type="root">رحم</m>
+					<m type="stem">رَحَمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">فبال</m>
+				<form type="base">
+					<m type="root">رحم</m>
+					<m type="stem">رَحْمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">فبال</m>
+				<form type="base">
+					<m type="root">رحم</m>
+					<m type="stem">رِحْمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="هم"><choice n="6">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هم</m>
+					<m type="stem">هُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هيم</m>
+					<m type="stem">هِمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هِمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="يدعون"><choice n="8">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ودع</m>
+					<m type="stem">يَدَعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعع</m>
+					<m type="stem">يَدُعُّون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعو</m>
+					<m type="stem">يَدَّعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعي</m>
+					<m type="stem">يَدْعُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعي</m>
+					<m type="stem">يَدْعُوَنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعو</m>
+					<m type="stem">يُدَّعَوْن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعو</m>
+					<m type="stem">يُدْعَوُنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دعو</m>
+					<m type="stem">يُدْعَوْن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لهم"><choice n="14">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لهِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهَم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهَمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لَهْم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لُهَم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لهم</m>
+					<m type="stem">لُهِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">هيم</m>
+					<m type="stem">هِمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هِمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفكيف تكفرونهم وأنتم بالحق لجاهلون</val>		
+	<w rend="أفكيف"><choice n="7">	
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كوف</m>
+					<m type="stem">كَيْفٌ </m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كيف</m>
+					<m type="stem">كَيَّفَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كيف</m>
+					<m type="stem">كَيِّفٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كيف</m>
+					<m type="stem">كَيْفَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كيف</m>
+					<m type="stem">كُيِّفَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كيف</m>
+					<m type="stem">كُيِّفْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">كيف</m>
+					<m type="stem">كِيَفٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="تكفرونهم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كفر</m>
+					<m type="stem">تَكْفُرُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كفر</m>
+					<m type="stem">تُكَفَّرُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كفر</m>
+					<m type="stem">تُكَفِّرُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كفر</m>
+					<m type="stem">تُكْفَرُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كفر</m>
+					<m type="stem">تُكْفِرُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="وأنتم"><choice n="3">	
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">ءنت</m>
+					<m type="stem">أَنَتُّم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">أنتم</m>
+					<m type="stem">أَنْتُم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">ءنت</m>
+					<m type="stem">أُنِتُّم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="بالحق"><choice n="6">	
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">حقق</m>
+					<m type="stem">حَق</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">حقق</m>
+					<m type="stem">حَقَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">حقق</m>
+					<m type="stem">حُقِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">حقق</m>
+					<m type="stem">حُقَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">حيق</m>
+					<m type="stem">حَقٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">حقق</m>
+					<m type="stem">حِقّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لجاهلون"><choice n="1">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">جهل</m>
+					<m type="stem">جَاهِلُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفستعلمونهم الحكمة أم الشريعة ؟</val>		
+	<w rend="أفستعلمونهم"><choice n="5">	
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">تُعْلَمُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">تَعْلَمُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">تُعَلَّمُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">تُعَلِّمُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">تُعْلِمُون</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="الحكمة"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حكم</m>
+					<m type="stem">حَكَمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حكم</m>
+					<m type="stem">حِكْمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءم</m>
+					<m type="stem">أَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الشريعة"><choice n="1">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرع</m>
+					<m type="stem">شَرِيعَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوتستبدلون الذي هو أدنى بالذي هو خير</val>		
+	<w rend="أوتستبدلون"><choice n="1">	
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">بدل</m>
+					<m type="stem">تَسْتَبْدِلُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الذي"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">الذي</m>
+					<m type="stem">الَّذِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">ذوي</m>
+					<m type="stem">ذَيّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="هو"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هُوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوى</m>
+					<m type="stem">هَوِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هو</m>
+					<m type="stem">هُوَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أدنى"><choice n="6">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دني</m>
+					<m type="stem">أَدْنَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">دنو</m>
+					<m type="stem">أُدْنَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">دنو</m>
+					<m type="stem">دنَّى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">دني</m>
+					<m type="stem">دَنَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">دني</m>
+					<m type="stem">دُنًى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">دني</m>
+					<m type="stem">دُنَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="بالذي"><choice n="2">	
+		<seg>
+			<m type="prefix">ب</m>
+				<form type="base">
+					<m type="root">الذي</m>
+					<m type="stem">الَّذِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">ذوي</m>
+					<m type="stem">ذَيّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="هو"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هُوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هوى</m>
+					<m type="stem">هَوِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هو</m>
+					<m type="stem">هُوَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="خير"><choice n="8">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خيَّرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خيِّرْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خَيَرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خَيِّرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خَيْرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خُيِّرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خِيرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خير</m>
+					<m type="stem">خِيَرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفوالله لو استعصى عليكم الأمر لأنتم قوم ضعفاء</val>		
+	<w rend="أفوالله"><choice n="1">	
+		<seg>
+			<m type="prefix">أفو</m>
+				<form type="base">
+					<m type="root">الله</m>
+					<m type="stem">الله</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لو"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٍّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لو</m>
+					<m type="stem">لَوْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="استعصى"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">استعصى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">اسْتَعْصَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="عليكم"><choice n="14">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">علِيَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">على</m>
+					<m type="stem">عَلَي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيٍّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عَلْي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عُلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وعل</m>
+					<m type="stem">عِلِي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عِلِّي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلْي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">ي</m>
+		</seg>
+	</choice></w><w rend="الأمر"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">أَمَرُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمْرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لأنتم"><choice n="3">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">ءنت</m>
+					<m type="stem">أَنَتُّم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">أنتم</m>
+					<m type="stem">أَنْتُم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">ءنت</m>
+					<m type="stem">أُنِتُّم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="قوم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قوم</m>
+					<m type="stem">قَوَّمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قوم</m>
+					<m type="stem">قَوِّمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قوم</m>
+					<m type="stem">قَوْمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قوم</m>
+					<m type="stem">قُوَّمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قوم</m>
+					<m type="stem">قُوِّمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="ضعفاء"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ضعف</m>
+					<m type="stem">ضُعَفَاءٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ضعف</m>
+					<m type="stem">ضُعَفَاءُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>لأكونن من الساجدين</val>		
+	<w rend="لأكونن"><choice n="2">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كين</m>
+					<m type="stem">أَكُونَنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">أُكَوَّنَنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="من"><choice n="9">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مَنٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مَنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">من</m>
+					<m type="stem">مَنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مون</m>
+					<m type="stem">مُنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مُنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مُنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مون</m>
+					<m type="stem">مِنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مِنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">من</m>
+					<m type="stem">مِنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الساجدين"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">سجد</m>
+					<m type="stem">سَاجِدَيْن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">سجد</m>
+					<m type="stem">سَاجِدِين</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوكالشمس المشرقة أهلت وجوه الذين آمنوا</val>		
+	<w rend="أوكالشمس"><choice n="2">	
+		<seg>
+			<m type="prefix">أوكال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شَمْس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوكال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شُمُس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="المشرقة"><choice n="4">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرق</m>
+					<m type="stem">مُشْرِقَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرق</m>
+					<m type="stem">مُشَرَّقَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرق</m>
+					<m type="stem">مُشَرِّقَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرق</m>
+					<m type="stem">مُشْرَقَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أهلت"><choice n="15">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هلل</m>
+					<m type="stem">أَهَلَّتْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أَهَلَتْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أَهَلْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أَهِلَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أَهِلْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أَهَّلَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أَهَّلْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أُهِلَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هلل</m>
+					<m type="stem">أُهِلَّت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هيل</m>
+					<m type="stem">أُهِلْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أُهِّلَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءهل</m>
+					<m type="stem">أُهِّلْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">هلت</m>
+					<m type="stem">هَلَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">هلل</m>
+					<m type="stem">هَلَّت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">هلل</m>
+					<m type="stem">هُلَّت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="وجوه"><choice n="7">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وجه</m>
+					<m type="stem">وُجُوه</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وجه</m>
+					<m type="stem">وُجُوهُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">جوي</m>
+					<m type="stem">جَوّ</m>
+				</form>
+			<m type="suffix">ه</m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">جوه</m>
+					<m type="stem">جَوَّه</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">جوو</m>
+					<m type="stem">جَوِّه</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">جوه</m>
+					<m type="stem">جَوْه</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">جوه</m>
+					<m type="stem">جُوِّه</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الذين"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">الذين</m>
+					<m type="stem">الَّذَينِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">الذين</m>
+					<m type="stem">الَّذِينَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="آمنوا"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">آمِنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">آمَنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أستندال صاحب الأحمر والأسود أم كونت ؟</val>		
+	<w rend="أستندال"><choice n="1">	
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">ستندال</m>
+					<m type="stem">ستندال</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="صاحب"><choice n="3">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صحب</m>
+					<m type="stem">صَاحِبُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صحب</m>
+					<m type="stem">صَاحَبَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صحب</m>
+					<m type="stem">صَاحِبْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الأحمر"><choice n="4">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حمر</m>
+					<m type="stem">أَحمرُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حمر</m>
+					<m type="stem">أَحْمَر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حمر</m>
+					<m type="stem">أَحْمَرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">حمر</m>
+					<m type="stem">أَحْمَرُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="والأسود"><choice n="4">	
+		<seg>
+			<m type="prefix">وال</m>
+				<form type="base">
+					<m type="root">سود</m>
+					<m type="stem">أَسْودُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">وال</m>
+				<form type="base">
+					<m type="root">سود</m>
+					<m type="stem">أَسْوَد</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">وال</m>
+				<form type="base">
+					<m type="root">سود</m>
+					<m type="stem">أَسْوَدُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">وال</m>
+				<form type="base">
+					<m type="root">ءسد</m>
+					<m type="stem">أُسُود</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءم</m>
+					<m type="stem">أَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="كونت"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">كَوَّنَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">كَوَّنْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كونت</m>
+					<m type="stem">كُونْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">كُوِّنَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">كُوِّنْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفأخذتكم الريبة من العدو ؟</val>		
+	<w rend="أفأخذتكم"><choice n="13">	
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخَذَت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">خذذ</m>
+					<m type="stem">أَخَذَّت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخَذْتَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخُذْتَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخِذَت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخِذْت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخَّذَت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أَخَّذْت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أُخِذَت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">خذذ</m>
+					<m type="stem">أُخِذَّت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أُخِذْت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أُخِّذَت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">ءخذ</m>
+					<m type="stem">أُخِّذْت</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+	</choice></w><w rend="الريبة"><choice n="3">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">راب</m>
+					<m type="stem">رِيبة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">راب</m>
+					<m type="stem">رِيبَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">راب</m>
+					<m type="stem">رَيْبَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="من"><choice n="9">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem">مَنٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مَنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">من</m>
+					<m type="stem">مَنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مون</m>
+					<m type="stem">مُنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مُنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مُنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مون</m>
+					<m type="stem">مِنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">منن</m>
+					<m type="stem">مِنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">من</m>
+					<m type="stem">مِنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="العدو"><choice n="6">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">عدي</m>
+					<m type="stem">عَدُوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">عدو</m>
+					<m type="stem">عَدَوٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">عدو</m>
+					<m type="stem">عَدْوٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">عدا</m>
+					<m type="stem">عُدْوٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">عدا</m>
+					<m type="stem">عَدْوٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">عدا</m>
+					<m type="stem">عُدُوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أبالصبر والعزيمة أنتم مسلحون ؟</val>		
+	<w rend="أبالصبر"><choice n="6">	
+		<seg>
+			<m type="prefix">أبال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صَبِرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أبال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صَبْرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أبال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صُبَر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أبال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صُبُرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أبال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صِبْر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أبال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صُبَّرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="والعزيمة"><choice n="2">	
+		<seg>
+			<m type="prefix">وال</m>
+				<form type="base">
+					<m type="root">عزم</m>
+					<m type="stem">عزيمة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">وال</m>
+				<form type="base">
+					<m type="root">عزم</m>
+					<m type="stem">عَزِيمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أنتم"><choice n="3">	
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">أتم</m>
+					<m type="stem">نُتِمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نتت</m>
+					<m type="stem">نَتُّمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أنتم</m>
+					<m type="stem">أَنْتُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="مسلحون"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">سلح</m>
+					<m type="stem">مُسَلَّحُون</m>
+				</form>
+			<m type="suffix">ون</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">سلح</m>
+					<m type="stem">مُسَلِّحُون</m>
+				</form>
+			<m type="suffix">ون</m>
+		</seg>
+</choice></w></phr><phr><val>أراك عصي الدمع شيمتك الصبر أما للهوى نهي عليك ولا أمر</val>		
+	<w rend="أراك"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءرر</m>
+					<m type="stem">أَرَا</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">رءي</m>
+					<m type="stem">أَرَاكٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">رءي</m>
+					<m type="stem">أَرَاكَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءرر</m>
+					<m type="stem">أَرَّاكَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءرر</m>
+					<m type="stem">أَرَّاكٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="عصي"><choice n="7">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">عَصِيٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">عَصِيَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">عَصِيٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">عَصْيٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">عُصِيَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصو</m>
+					<m type="stem">عِصِيٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عصي</m>
+					<m type="stem">عِصْيٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الدمع"><choice n="1">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">دمع</m>
+					<m type="stem">دَمْع</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="شيمتك"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شيم</m>
+					<m type="stem">شَيْمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شيم</m>
+					<m type="stem">شِيمَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الصبر"><choice n="6">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صَبِرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صَبْرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صُبَر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صُبُرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صِبْر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">صبر</m>
+					<m type="stem">صُبَّرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أما"><choice n="4">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أَمَّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمًّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمَّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">ما</m>
+					<m type="stem">مَا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="للهوى"><choice n="1">	
+		<seg>
+			<m type="prefix">لال</m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="نهي"><choice n="7">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نَهِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نَهِيّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نَهِّي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نَهْي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نُهِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نُهِّي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نهي</m>
+					<m type="stem">نِهْي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="عليك"><choice n="12">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">علِيَ</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">على</m>
+					<m type="stem">عَلَي</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيَ</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيّ</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيٍّ</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عَلْي</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عُلِيّ</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وعل</m>
+					<m type="stem">عِلِي</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلِيّ</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عِلِّي</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلْي</m>
+				</form>
+			<m type="suffix">ك</m>
+		</seg>
+	</choice></w><w rend="ولا"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ولي</m>
+					<m type="stem">ولَّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لا</m>
+					<m type="stem">لَا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أمر"><choice n="17">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أمَّرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمَرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مر</m>
+					<m type="stem">أَمَرّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مر</m>
+					<m type="stem">أَمَرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مر</m>
+					<m type="stem">أَمَرٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">أَمَرَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمُرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمْرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمِرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمِّرْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أَمْرٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أُمِرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمر</m>
+					<m type="stem">أُمِّرَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مَرَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مُرَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مُرٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مِرٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفستستقبلهن في واشنطن أم في نيويورك ؟</val>		
+	<w rend="أفستستقبلهن"><choice n="2">	
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">قبل</m>
+					<m type="stem">تُسْتَقْبَل</m>
+				</form>
+			<m type="suffix">هن</m>
+		</seg>
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">قبل</m>
+					<m type="stem">تَسْتَقْبِل</m>
+				</form>
+			<m type="suffix">هن</m>
+		</seg>
+	</choice></w><w rend="في"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وفي</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">في</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="واشنطن"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">واشنطن</m>
+					<m type="stem">وَاشِنْطُنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءم</m>
+					<m type="stem">أَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="في"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وفي</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">في</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="نيويورك"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نيويورك</m>
+					<m type="stem">نِيُويُورْكْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوككل مرة تتأخر عن الموعد ؟</val>		
+	<w rend="أوككل"><choice n="5">	
+		<seg>
+			<m type="prefix">أوك</m>
+				<form type="base">
+					<m type="root">كلل</m>
+					<m type="stem">كَلٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوك</m>
+				<form type="base">
+					<m type="root">كيل</m>
+					<m type="stem">كِلْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوك</m>
+				<form type="base">
+					<m type="root">وكل</m>
+					<m type="stem">كِلْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوك</m>
+				<form type="base">
+					<m type="root">ءكل</m>
+					<m type="stem">كُلْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوك</m>
+				<form type="base">
+					<m type="root">كل</m>
+					<m type="stem">كُلُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="مرة"><choice n="3">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مَرَّة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مُرَّة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">مرر</m>
+					<m type="stem">مِرَّة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="تتأخر"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءخر</m>
+					<m type="stem">تَتَأَخَّر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءخر</m>
+					<m type="stem">تُتَأَخَّر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="عن"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عن</m>
+					<m type="stem">عَنٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عنن</m>
+					<m type="stem">عَنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عن</m>
+					<m type="stem">عَنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عون</m>
+					<m type="stem">عُنَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عون</m>
+					<m type="stem">عِنْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الموعد"><choice n="4">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">وعد</m>
+					<m type="stem">مَوْعِد</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">ءوعد</m>
+					<m type="stem">مُوعَدُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">توعد</m>
+					<m type="stem">مُوعَّدُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">ءوعد</m>
+					<m type="stem">مُوعِدُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوبأنفسهم يلقون في التهلكة ؟</val>		
+	<w rend="أوبأنفسهم"><choice n="2">	
+		<seg>
+			<m type="prefix">أوب</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">أَنْفَس</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أوب</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">أَنْفُس</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="يلقون"><choice n="11">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقق</m>
+					<m type="stem">يَلُقُّون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقو</m>
+					<m type="stem">يَلِقُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقي</m>
+					<m type="stem">يَلْقَوُنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقو</m>
+					<m type="stem">يَلْقُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقو</m>
+					<m type="stem">يَلْقُوَنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ألقى</m>
+					<m type="stem">يُلَقَّوُنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ألقى</m>
+					<m type="stem">يُلَقَّوْن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقق</m>
+					<m type="stem">يُلَقُّون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ألقى</m>
+					<m type="stem">يُلْقَوُنّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ألقى</m>
+					<m type="stem">يُلْقَوْن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لقي</m>
+					<m type="stem">يُلْقُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="في"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وفي</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">في</m>
+					<m type="stem">فِي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="التهلكة"><choice n="1">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">هلك</m>
+					<m type="stem">تَهْلُكَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>خرجت وطلوع الشمس</val>		
+	<w rend="خرجت"><choice n="8">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خَرَجَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خَرَجْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خَرِجَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خَرِجْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خَرَّجَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خَرَّجْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خُرِّجَت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">خرج</m>
+					<m type="stem">خُرِّجْت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="وطلوع"><choice n="2">	
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">طلع</m>
+					<m type="stem">طُلوع</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">طلع</m>
+					<m type="stem">طُلُوع</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الشمس"><choice n="5">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شَمِسُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شَمَسُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شَمْس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شُمُس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شمس</m>
+					<m type="stem">شُمَّسٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفعلى ربهم يتوكلون</val>		
+	<w rend="أفعلى"><choice n="12">	
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem">فُعْلَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">على</m>
+					<m type="stem">عَلَي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيٍّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عَلْي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عُلِيّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلِيّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عِلِّي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلْي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أف</m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="ربهم"><choice n="6">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">راب</m>
+					<m type="stem">رِبْ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رَبّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رَبَّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رُبَّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">روب</m>
+					<m type="stem">رُبْ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رُبٌّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="يتوكلون"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وكل</m>
+					<m type="stem">يَتَوَكَّلُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوللعالم نفس المكانة ؟</val>		
+	<w rend="أوللعالم"><choice n="2">	
+		<seg>
+			<m type="prefix">أولل</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَالَم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أولل</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَالِم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="نفس"><choice n="9">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نُفُسٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفَسٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفَسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفُسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفِسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفَّسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفِّسْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفْسٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفْسُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="المكانة"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">مكن</m>
+					<m type="stem">مَكَانَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">مكن</m>
+					<m type="stem">مَكَّانَة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوكالأطفال أنتم تتصرفون ؟</val>		
+	<w rend="أوكالأطفال"><choice n="1">	
+		<seg>
+			<m type="prefix">أوكال</m>
+				<form type="base">
+					<m type="root">طفل</m>
+					<m type="stem">أَطْفَالٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أنتم"><choice n="3">	
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">أتم</m>
+					<m type="stem">نُتِمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نتت</m>
+					<m type="stem">نَتُّمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أنتم</m>
+					<m type="stem">أَنْتُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="تتصرفون"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صرف</m>
+					<m type="stem">تَتَصَرَّفُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوالله لو علم المشركون عذاب الجحيم لاستغفروا ربهم وآمنوا بالقرآن</val>		
+	<w rend="أوالله"><choice n="1">	
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">الله</m>
+					<m type="stem">الله</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لو"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٍّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لو</m>
+					<m type="stem">لَوْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="علم"><choice n="10">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عللم</m>
+					<m type="stem">عَلَّمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَلَمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَلَمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَلِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَلِّمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَلْمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عُلِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عُلِّمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عُلْمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عِلْمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="المشركون"><choice n="4">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرك</m>
+					<m type="stem">مُشَرِّكُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرك</m>
+					<m type="stem">مُشَرَّكُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرك</m>
+					<m type="stem">مُشْرَكُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شرك</m>
+					<m type="stem">مُشْرِكُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="عذاب"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عذب</m>
+					<m type="stem">عَذَاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عذب</m>
+					<m type="stem">عِذَاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الجحيم"><choice n="1">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">جحم</m>
+					<m type="stem">جَحِيم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لاستغفروا"><choice n="2">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">غفر</m>
+					<m type="stem">اسْتَغْفَرُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">غفر</m>
+					<m type="stem">اسْتُغْفِرُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="ربهم"><choice n="6">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">راب</m>
+					<m type="stem">رِبْ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رَبّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رَبَّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">رب</m>
+					<m type="stem">رُبَّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">روب</m>
+					<m type="stem">رُبْ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ربب</m>
+					<m type="stem">رُبٌّ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="وآمنوا"><choice n="2">	
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">آمِنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">ءمن</m>
+					<m type="stem">آمَنُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="بالقرآن"><choice n="1">	
+		<seg>
+			<m type="prefix">بال</m>
+				<form type="base">
+					<m type="root">قرء</m>
+					<m type="stem">قُرْآن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفبأخطائهم يعترفون ؟</val>		
+	<w rend="أفبأخطائهم"><choice n="1">	
+		<seg>
+			<m type="prefix">أفب</m>
+				<form type="base">
+					<m type="root">خطء</m>
+					<m type="stem">أَخْطاء</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="يعترفون"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عرف</m>
+					<m type="stem">يَعْتَرِفُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">عرف</m>
+					<m type="stem">يُعْتَرَفُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوبالكتاب هم يظنون الظنون ؟</val>		
+	<w rend="أوبالكتاب"><choice n="3">	
+		<seg>
+			<m type="prefix">أوبال</m>
+				<form type="base">
+					<m type="root">كتب</m>
+					<m type="stem">كَتَّاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوبال</m>
+				<form type="base">
+					<m type="root">كتب</m>
+					<m type="stem">كُتَّاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أوبال</m>
+				<form type="base">
+					<m type="root">كتب</m>
+					<m type="stem">كِتَاب</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="هم"><choice n="6">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هَمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هم</m>
+					<m type="stem">هُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هيم</m>
+					<m type="stem">هِمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">همم</m>
+					<m type="stem">هِمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="يظنون"><choice n="3">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ظنن</m>
+					<m type="stem">يَظُنُّون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ظنن</m>
+					<m type="stem">يُظَنُّون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ظنن</m>
+					<m type="stem">يُظِنُّون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الظنون"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">ظنن</m>
+					<m type="stem">ظَنُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">ظنن</m>
+					<m type="stem">ظُنُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>ولئلا يكون للناس عليكم حجة</val>		
+	<w rend="ولئلا"><choice n="1">	
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لئلا</m>
+					<m type="stem">لِئَلّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="يكون"><choice n="3">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كين</m>
+					<m type="stem">يَكُونُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">يُكَوَّنُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كون</m>
+					<m type="stem">يُكَوِّنُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="للناس"><choice n="2">	
+		<seg>
+			<m type="prefix">لال</m>
+				<form type="base">
+					<m type="root">نوس</m>
+					<m type="stem">نَاسِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">لل</m>
+				<form type="base">
+					<m type="root">نسي</m>
+					<m type="stem">نَاسِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="عليكم"><choice n="12">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">علِيَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">على</m>
+					<m type="stem">عَلَي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيَ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِيٍّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عَلْي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عُلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وعل</m>
+					<m type="stem">عِلِي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلِيّ</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علل</m>
+					<m type="stem">عِلِّي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علي</m>
+					<m type="stem">عِلْي</m>
+				</form>
+			<m type="suffix">كم</m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">عَلِّي</m>
+				</form>
+			<m type="suffix">ي</m>
+		</seg>
+	</choice></w><w rend="حجة"><choice n="3">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">حجج</m>
+					<m type="stem">حَجَّة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">حجج</m>
+					<m type="stem">حُجَّة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">حجج</m>
+					<m type="stem">حِجَّة</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفسيكفيكهم الله وهو السميع العليم</val>		
+	<w rend="أفسيكفيكهم"><choice n="2">	
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">كفي</m>
+					<m type="stem">يكْفِي</m>
+				</form>
+			<m type="suffix">كهم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أفس</m>
+				<form type="base">
+					<m type="root">كفي</m>
+					<m type="stem">يُكَفِّي</m>
+				</form>
+			<m type="suffix">كهم</m>
+		</seg>
+	</choice></w><w rend="الله"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem">الله</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="وهو"><choice n="5">	
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هُوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">هوي</m>
+					<m type="stem">هَوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">هوى</m>
+					<m type="stem">هَوِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">هو</m>
+					<m type="stem">هُوَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="السميع"><choice n="2">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">سمع</m>
+					<m type="stem">سِمِّيع</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">سمع</m>
+					<m type="stem">سَمِيع</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="العليم"><choice n="1">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">عَلِيم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>ألتمرح أم لتعمل أنت هنا ؟</val>		
+	<w rend="ألتمرح"><choice n="3">	
+		<seg>
+			<m type="prefix">أل</m>
+				<form type="base">
+					<m type="root">مرح</m>
+					<m type="stem">تَمْرَحُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أل</m>
+				<form type="base">
+					<m type="root">مرح</m>
+					<m type="stem">تَمرَّحَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أل</m>
+				<form type="base">
+					<m type="root">مرح</m>
+					<m type="stem">تَمَرُّح</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءم</m>
+					<m type="stem">أَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أُمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءمم</m>
+					<m type="stem">أَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="لتعمل"><choice n="6">	
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">عمل</m>
+					<m type="stem">تَعَمُّلِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">عمل</m>
+					<m type="stem">تَعْمَل</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">عمل</m>
+					<m type="stem">تُعَمَّلَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">عمل</m>
+					<m type="stem">تُعَمِّلَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">عمل</m>
+					<m type="stem">تُعْمَلَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ل</m>
+				<form type="base">
+					<m type="root">عمل</m>
+					<m type="stem">تُعْمِلَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أنت"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أنت</m>
+					<m type="stem">أَنْتَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أنت</m>
+					<m type="stem">أَنْتِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أنن</m>
+					<m type="stem">أُنَّت</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أنت</m>
+					<m type="stem">أَنَّتَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نتت</m>
+					<m type="stem">نَتَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="هنا"><choice n="4">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هنن</m>
+					<m type="stem">هَنَّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هنن</m>
+					<m type="stem">هَنًّا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هنا</m>
+					<m type="stem">هِنًا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هنا</m>
+					<m type="stem">هُنَا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>قال الله تعالى  ولبئس ما شروا به أنفسهم لو كانوا يعلمون</val>		
+	<w rend="قال"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قول</m>
+					<m type="stem">قالَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قول</m>
+					<m type="stem">قالٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قلي</m>
+					<m type="stem">قَالٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قيل</m>
+					<m type="stem">قَالَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">قلل</m>
+					<m type="stem">قَالٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الله"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">الله / إلاه</m>
+					<m type="stem">الله</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="تعالى"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علو</m>
+					<m type="stem">تَعَالَى</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="ولبئس"><choice n="3">	
+		<seg>
+			<m type="prefix">ول</m>
+				<form type="base">
+					<m type="root">بءس</m>
+					<m type="stem">بَئِسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ول</m>
+				<form type="base">
+					<m type="root">بءس</m>
+					<m type="stem">بِئْسَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ول</m>
+				<form type="base">
+					<m type="root">بءس</m>
+					<m type="stem">بُئِس</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="ما"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ما</m>
+					<m type="stem">مَا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="شروا"><choice n="7">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شري</m>
+					<m type="stem">شَرَوْا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شري</m>
+					<m type="stem">شَرُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شرر</m>
+					<m type="stem">شَرَّوْا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شري</m>
+					<m type="stem">شَرُّوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شري</m>
+					<m type="stem">شُرُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شري</m>
+					<m type="stem">شِرُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">شرر</m>
+					<m type="stem">شِرُّوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="به"><choice n="4">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">بهي</m>
+					<m type="stem">بَهٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">بهي</m>
+					<m type="stem">بَهٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">به</m>
+					<m type="stem">بِهِ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">ب</m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix">ه</m>
+		</seg>
+	</choice></w><w rend="أنفسهم"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">أَنْفَس</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+</choice></w></phr><phr><val>قال الله تعالى  ولبئس ما شروا به أنفسهم لو كانوا يعلمون</val>	
+	<w rend="أنفسهم"><choice n="9">	
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نُفُسٌ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفَسٌ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفَسَ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفُسَ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفِسَ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفَّسَ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفِّسْ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفْسٌ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+		<seg>
+			<m type="prefix">أ</m>
+				<form type="base">
+					<m type="root">نفس</m>
+					<m type="stem">نَفْسُ</m>
+				</form>
+			<m type="suffix">هم</m>
+		</seg>
+	</choice></w><w rend="لو"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٍ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوٍّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لوي</m>
+					<m type="stem">لَوِّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">لو</m>
+					<m type="stem">لَوْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="كانوا"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">كين / كون</m>
+					<m type="stem">كَانُوا</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="يعلمون"><choice n="7">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يَعْلِمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يَعْلَمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يَعْلُمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يُعَلَّمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يُعَلِّمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يُعْلَمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">علم</m>
+					<m type="stem">يُعْلِمُون</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أوشهد الشهر ولم يصم ؟</val>		
+	<w rend="أوشهد"><choice n="6">	
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">شهد</m>
+					<m type="stem">شَهُدَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">شهد</m>
+					<m type="stem">شَهِدَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">شهد</m>
+					<m type="stem">شَهْدٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">شهد</m>
+					<m type="stem">شُهُدٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">شهد</m>
+					<m type="stem">شُهَّدٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">أو</m>
+				<form type="base">
+					<m type="root">شهد</m>
+					<m type="stem">شُهْدٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="الشهر"><choice n="4">	
+		<seg>
+			<m type="prefix">ال</m>
+				<form type="base">
+					<m type="root">شهر</m>
+					<m type="stem">شَهْر</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="ولم"><choice n="11">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ولم</m>
+					<m type="stem">وَلْمٌ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ولم</m>
+					<m type="stem">وَلِّمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ولم</m>
+					<m type="stem">ولِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ولم</m>
+					<m type="stem">وَلَمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ولم</m>
+					<m type="stem">وَلْم</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لمم</m>
+					<m type="stem">لَمٌّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لمم</m>
+					<m type="stem">لَمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لم</m>
+					<m type="stem">لَمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لوم</m>
+					<m type="stem">لُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لمم</m>
+					<m type="stem">لُمَّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix">و</m>
+				<form type="base">
+					<m type="root">لم</m>
+					<m type="stem">لِمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="يصم"><choice n="5">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وصم</m>
+					<m type="stem">يَصِمُ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صيم</m>
+					<m type="stem">يَصُمْ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">ءصم</m>
+					<m type="stem">يُصِمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صمم</m>
+					<m type="stem">يَصَمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">صمم</m>
+					<m type="stem">يُصَمُّ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أسربفتكن أفن هندز</val>		
+	<w rend="أسربفتكن"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="أفن"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أفن</m>
+					<m type="stem">أَفَن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">أفن</m>
+					<m type="stem">أَفْن</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="هندز"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">هندز</m>
+					<m type="stem">هندزَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>وفجمرقندن سأهرمندشرك</val>		
+	<w rend="وفجمرقندن"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">وفجمرقندن</m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="سأهرمندشرك"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">سأهرمندشرك</m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>بالكرحشصد فعنهمن</val>		
+	<w rend="بالكرحشصد"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">بالكرحشصد</m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="فعنهمن"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>كبعمرش فالخواشرسكع</val>		
+	<w rend="كبعمرش"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="فالخواشرسكع"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">فالخواشرسكع</m>
+					<m type="stem">فالخواشرسكع</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr><phr><val>أفرترلشكن بعنم سورثتمن</val>		
+	<w rend="أفرترلشكن"><choice n="1">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="بعنم"><choice n="1">	
+		<seg>
+			<m type="prefix">ب</m>
+				<form type="base">
+					<m type="root">عنم</m>
+					<m type="stem">عَنَمَ</m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+	</choice></w><w rend="سورثتمن"><choice n="2">	
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root"></m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+		<seg>
+			<m type="prefix"></m>
+				<form type="base">
+					<m type="root">سورثتمن</m>
+					<m type="stem"></m>
+				</form>
+			<m type="suffix"></m>
+		</seg>
+</choice></w></phr>
+</text>	
+</TEI>

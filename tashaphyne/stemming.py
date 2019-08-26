@@ -39,12 +39,17 @@ if __name__ == "__main__":
     sys.path.append('../')
     import normalize
     import stem_const
-    import roots_const      
+    import affix_const
+    import roots_const 
+    import verb_stamp_const 
+    import arabicstopwords as stopwords     
 else:
     from . import normalize
     from . import stem_const
+    from . import affix_const
     from . import roots_const  
-
+    from . import verb_stamp_const  
+    from . import arabicstopwords as stopwords
 class ArabicLightStemmer:
     """
     ArabicLightStemmer: a class which proved a configurable stemmer
@@ -83,6 +88,11 @@ class ArabicLightStemmer:
         self.joker = stem_const.DEFAULT_JOKER
         self.prefix_list = stem_const.DEFAULT_PREFIX_LIST
         self.suffix_list = stem_const.DEFAULT_SUFFIX_LIST
+        # root dictionary
+        self.root_list = roots_const.ROOTS 
+        # lists used to validate affixation
+        #~ self.valid_affixes_list = []
+        self.valid_affixes_list = set(list(affix_const.VERB_AFFIX_LIST) + list(affix_const.NOUN_AFFIX_LIST))
         self.word = u""
         self.unvocalized = u""
         self.normalized = u""
@@ -249,8 +259,35 @@ class ArabicLightStemmer:
         """
         self.suffix_list = new_suffix_list
         self._create_suffix_tree(self.suffix_list)
-
-
+        
+    def get_roots_list(self, ):
+        """ return the roots list used by the stemmer to validate roots.
+        This constant take roots_const.ROOTS by default.
+        @return: roots list.
+        @rtype: set().
+        """
+        return self.roots_list
+    def set_roots_list(self, new_roots_list):
+        """ Set  roots list used by the stemmer to validate roots..
+        This constant take roots_const.ROOTS by default.
+        @param new_roots_list: a set of roots.
+        @type new_roots_list: set of unicode string.
+        """
+        self.roots_list = new_roots_list
+    def get_valid_affixes_list(self, ):
+        """ return the valid_affixes list used by the stemmer to validate affixes.
+        This constant take valid_affixes_const.ROOTS by default.
+        @return: valid_affixes list.
+        @rtype: set().
+        """
+        return self.valid_affixes_list
+    def set_valid_affixes_list(self, new_valid_affixes_list):
+        """ Set  valid_affixes list used by the stemmer to validate affixes..
+        This constant take valid_affixes_const.ROOTS by default.
+        @param new_valid_affixes_list: a set of valid_affixes.
+        @type new_valid_affixes_list: set of unicode string.
+        """
+        self.valid_affixes_list = new_valid_affixes_list
     def set_word(self, new_word):
         """ Set the word to treat by the stemmer.
         @param new_word: the new word.
@@ -313,11 +350,14 @@ class ArabicLightStemmer:
         if prefix_index >= 0 or suffix_index >= 0:
             self.extract_root(prefix_index, suffix_index)
         else:
-            self.root = self.choose_root()
+            self.root = self._choose_root()
         return self.root
 
-    def choose_root(self,):
+    def _choose_root(self,):
         """ choose a root for the given word """
+        if stopwords.is_stop(self.word):
+            return stopwords.stop_root(self.word)
+        
         if not self.segment_list:
             self.segment(self.word)
         affix_list = self.get_affix_list()
@@ -335,25 +375,28 @@ class ArabicLightStemmer:
         accepted_root = self.most_common(roots_tmp)
         
         return accepted_root
-    
+        
     def _choose_stem(self,):
         """ choose a stem for the given word """
+        # if word is stop word
+        if stopwords.is_stop(self.word):
+            return stopwords.stop_stem(self.word)
+        
         if not self.segment_list:
             self.segment(self.word)
-        affix_list = self.get_affix_list()
+        seg_list = self.segment_list
+        # verify affix against an affix list
+        seg_list = [(x,y) for (x,y) in seg_list if self._verify_affix(x,y)]
         
-        stems = [d['stem'] for d in affix_list]
+        # choose the shortest stem
+        if not seg_list: # if empty
+            left = 0
+            right = len(self.word)
+        else:
+            left, right = self.get_left_right(seg_list)
         
-        # filter by length
-        # avoid short stems
-        stems_tmp = stems
-        accepted = [x for x in stems_tmp if len(x) >= 2]
-        if accepted: # avoid empty list
-           stems_tmp = accepted
-        # choose the most frequent stem
-        accepted_stem = self.most_common(stems_tmp)
-
-        return accepted_stem
+        return self.unvocalized[left:right]
+        
       
     def get_normalized(self):
         """ return the normalized form of the treated word by the stemmer.
@@ -446,15 +489,21 @@ class ArabicLightStemmer:
         #~ # ask for default stem
         #~ if prefix_index < 0 and suffix_index < 0:
             #~ return self._choose_stem()
-        if prefix_index < 0:
-            left = self.stem_left
+        if prefix_index >= 0 or suffix_index >= 0:
+            if prefix_index < 0:
+                left = self.stem_left
+                #~ left = self.left
+            else:
+                left = prefix_index
+            if suffix_index < 0:
+                right = self.stem_right
+                #~ right = self.right
+            else:
+                right = suffix_index
+            return self.unvocalized[left:right]
         else:
-            left = prefix_index
-        if suffix_index < 0:
-            right = self.stem_right
-        else:
-            right = suffix_index
-        return self.unvocalized[left:right]
+            stem = self._choose_stem()
+        return stem           
 
     def _handle_teh_infix(self, starword, left, right):
         """
@@ -656,7 +705,7 @@ class ArabicLightStemmer:
         # segment
         self.segment(word)
         #constitute the root
-        self.extract_root()
+        #~ self.extract_root()
         return self.get_stem()
 
     def transform2stars(self, word):
@@ -739,7 +788,7 @@ class ArabicLightStemmer:
         self.stem_left = left
         self.stem_right = right
         self.starword = word
-        self.extract_root()
+        #~ self.extract_root()
         # return starword, left, right position of stem
         return (word, left, right)
 
@@ -965,8 +1014,11 @@ class ArabicLightStemmer:
         # print lefts, rights
         for i in lefts:
             for j in rights:
-                if j >= i+2:
+                if j >= i+2 :
                     self.segment_list.add((i, j))
+        # filter segment according to valid affixes list
+        
+        self.left, self.right = self.get_left_right(self.segment_list)
         return self.segment_list
 
 
@@ -990,7 +1042,7 @@ class ArabicLightStemmer:
         return self.segment_list
 
 
-    def get_affix_list(self, ):
+    def get_affix_list(self, seg_list=[]):
         u""" return   a list of affix tuple of the treated word by the stemmer.
 
         Example:
@@ -1005,12 +1057,105 @@ class ArabicLightStemmer:
         @return: List of Affixes tuple
         @rtype: list of dict.
         """
+        if not seg_list:
+            seg_list = self.segment_list
         affix_list = []
-        for  item in self.segment_list:
-            affix_list.append(self.get_affix_tuple(item[0], item[1]))
+        for  left,right in seg_list:
+            affix_list.append(self.get_affix_tuple(left, right))
         return affix_list
+    def _valid_stem(self, stem, tag="noun", prefix=""):
+        """ Test if the stem is accepted"""
+        if not stem:
+            return False
+        # valid stems for verbs
+        if tag == "verb":
+            # verb has length <= 6
+            if len(stem) > 6 or len(stem) < 2:
+                return False
+            # forbidden letters in verbs like Teh Marbuta
+            elif araby.TEH_MARBUTA in stem:
+                return False
+            # 6 letters stem must starts with ALEF
+            elif len(stem) == 6 and not stem.startswith(araby.ALEF):
+                return False
+            # 5 letters stem must starts with ALEF/TEH or SEEN (a 6 letters verbs striped from Alef)
+            # قد يكون الجذع الخماسي فعلا خماسيا
+            # لذا يجب أن يبدأ  بالتاء أو الألف
+            # أما إذا كن منقلبنا عن فعل سداسي، 
+            # مثل استغفر، افرنقع، 
+            # فيجب أن يكون مسبوقا بحرف يحذف ألف الوصل
+            elif len(stem) == 5 and not stem[0] in (araby.ALEF, araby.TEH):
+                if prefix[-1:] in (araby.YEH, araby.TEH, araby.NOON, araby.ALEF_HAMZA_ABOVE):
+                    return False
+            # لا يقبل ألف بعد حرف مضارعة
+            elif stem.startswith(araby.ALEF) and  prefix[-1:] in (araby.YEH, araby.NOON, araby.TEH, araby.ALEF_HAMZA_ABOVE, araby.ALEF):
+                return False
+            ## lookup for stamp
+            if  not verb_stamp_const.is_verb_stamp(stem):
+                return False
+        elif tag == "noun":
+            if len(stem) >= 8 :
+                return False
+            return True
+        return True
 
+                
+    def _verify_affix(self, prefix_index=-1, suffix_index=-1):
+        """
+        validate affixes against a list of valid affixes
+        """
+        prefix = self.get_prefix(prefix_index)
+        suffix = self.get_suffix(suffix_index)
 
+        TAG = True
+        if TAG:
+            affix = prefix+'-'+suffix            
+            stem   = self.get_stem(prefix_index, suffix_index)
+            if affix in affix_const.VERB_AFFIX_LIST and self._valid_stem(stem,"verb", prefix):
+                # is a valid verb stem
+                if affix in affix_const.NOUN_AFFIX_LIST and self._valid_stem(stem,"noun"):                      
+                # is also a noun stem
+                    return True # TAG VN
+                else:
+                    return True # TAG V
+            else:
+                if affix in affix_const.NOUN_AFFIX_LIST and self._valid_stem(stem,"noun"):
+                    return True # TAG N
+                else:
+                    return False # not a valid verb or not a noun
+        return True
+        
+        if self.valid_affixes_list :
+            affix = prefix+'-'+suffix
+            return affix in self.valid_affixes_list
+        else:
+            #مراجعة مبسطة
+            # أل التعريف مع ضمير متصل
+            if ((u"ال" in prefix or u"لل" in prefix) and 
+                (u'ه' in suffix or u'ك' in suffix)
+                ):
+                return False
+            # التاء المربوطة مع حروف المضارعة
+
+            if ((u"ي" in prefix or u"يس" in prefix or u"نس" in prefix 
+            or u"تس" in prefix or u"سي" in prefix or u"سأ" in prefix) and 
+                (u'ة' in suffix)
+                ):
+                return False
+            # التاء المتحركة مع حروف المضارعة
+
+            if ((u"ي" in prefix or u"يس" in prefix or u"نس" in prefix 
+            or u"تس" in prefix or u"سي" in prefix or u"سأ" in prefix) and 
+                (u'تم' in suffix or u'تن' in suffix )
+                ):
+                return False
+            # حروف الجر مع واو جمع مذكر سالم
+            #ولمثنى المرفوع
+            if ((u"ك" in prefix or u"ب" in prefix or u"لل" in prefix) and 
+                (u'و' in suffix or u'ان' in suffix)
+                ):
+                return False
+        return True
     ###############################################################
     #{ General Functions
     ###############################################################
@@ -1071,10 +1216,21 @@ class ArabicLightStemmer:
         if triroots:
             lst = triroots
         return max(set(lst), key=lst.count)
-    @staticmethod
-    def is_root(word):
+
+    def is_root(self, word):
         """ test if word is a root"""
-        return word in roots_const.ROOTS  
+        return word in self.root_list
+    @staticmethod
+    def get_left_right(ls):
+        """
+        get the max left and the min right
+        """
+        if not ls:
+            return -1,-1
+        l,_= max(ls)
+        r = min([y for (x,y) in ls if x==l])
+        return l, r
+
 
 if __name__ == "__main__":
     from pyarabic.arabrepr import arepr as repr
@@ -1083,7 +1239,6 @@ if __name__ == "__main__":
     u'بالمكتبة',
     u'مزدهرة', 
     u'كاتب', 
-
     u'مضروب',
     u'مضارب',
     u"مردود",
@@ -1092,28 +1247,34 @@ if __name__ == "__main__":
         u'مزتهرة',
     u'مضطرب',
     u'بالمكتبة',
+    u'مالبدرسمه',
     u"مكتوب", 
+    u"الآجال", 
+    u"بالبلدان", 
+    u"وفيهما", 
     ]
     for word in wordlist:
         # stemming word
         ARLISTEM.light_stem(word)
         # extract stem
-        print(ARLISTEM.get_stem())
+        print("stem", ARLISTEM.get_stem())
         print(ARLISTEM.infix_letters)
         # extract root
         print("root:", ARLISTEM.get_root())
 
         # get prefix position index
-        print(ARLISTEM.get_left())
+        print("left",ARLISTEM.get_left())
+        print("left stem",ARLISTEM.stem_left)
         # get prefix
         print(ARLISTEM.get_prefix())
         # get prefix with a specific index
         print(ARLISTEM.get_prefix(2))
 
         # get suffix position index
-        print(ARLISTEM.get_right())
+        print("right",ARLISTEM.get_right())
+        print("right_stem",ARLISTEM.stem_right)
         # get suffix
-        print(ARLISTEM.get_suffix())
+        print("suffix", ARLISTEM.get_suffix())
         # get suffix with a specific index
         print(ARLISTEM.get_suffix(10))
         # get affix tuple
@@ -1121,14 +1282,14 @@ if __name__ == "__main__":
 
 
         # star words
-        print(ARLISTEM.get_starword())
+        print("starword", ARLISTEM.get_starword())
         # get star stem
-        print(ARLISTEM.get_starstem())
+        print("starstem",ARLISTEM.get_starstem())
 
         #  get normalized word
-        print(ARLISTEM.get_normalized())
+        print("normalize", ARLISTEM.get_normalized())
         #  get unvocalized word
-        print(ARLISTEM.get_unvocalized())
+        print("unvocalized",ARLISTEM.get_unvocalized())
 
         # Detect all possible segmentation
         print(ARLISTEM.segment(word))

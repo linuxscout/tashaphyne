@@ -7504,4 +7504,4 @@ raw_roots=u"""ءبء
 يود
 يوم
 حوسب"""
-ROOTS = raw_roots.split('\n')
+ROOTS = set(list(raw_roots.split('\n')))

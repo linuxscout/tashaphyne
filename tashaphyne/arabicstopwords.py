@@ -21,13 +21,19 @@
 #  MA 02110-1301, USA.
 #  
 #  
-
+from __future__ import (
+    absolute_import,
+    print_function,
+    unicode_literals,
+    division,
+    )
 import pyarabic.araby as araby
-from stopwords import STOPWORDS 
+from .stopwords import STOPWORDS
+#~ import stopwords
 #~ STOPWORDS =  stopwords.STOPWORDS
 def is_stop(word):
     """ test if word is a stop"""
-    return word in STOPWORDS
+    return word in STOPWORDS 
 
 def stop_stem(word):
     """ test if word is a stop"""
@@ -42,7 +48,7 @@ def stop_root(word):
 
 def main(args):
     word = u"لعلهم"
-    print stop_stem(word)
+    print(stop_stem(word))
     return 0
     
 if __name__ == '__main__':

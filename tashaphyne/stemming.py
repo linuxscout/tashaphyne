@@ -42,14 +42,14 @@ if __name__ == "__main__":
     import affix_const
     import roots_const 
     import verb_stamp_const 
-    import arabicstopwords as stopwords     
+    import arabicstopwords      
 else:
     from . import normalize
     from . import stem_const
     from . import affix_const
     from . import roots_const  
     from . import verb_stamp_const  
-    from . import arabicstopwords as stopwords
+    from . import arabicstopwords
 class ArabicLightStemmer:
     """
     ArabicLightStemmer: a class which proved a configurable stemmer
@@ -355,8 +355,8 @@ class ArabicLightStemmer:
 
     def _choose_root(self,):
         """ choose a root for the given word """
-        if stopwords.is_stop(self.word):
-            return stopwords.stop_root(self.word)
+        if arabicstopwords.is_stop(self.word):
+            return arabicstopwords.stop_root(self.word)
         
         if not self.segment_list:
             self.segment(self.word)
@@ -379,8 +379,8 @@ class ArabicLightStemmer:
     def _choose_stem(self,):
         """ choose a stem for the given word """
         # if word is stop word
-        if stopwords.is_stop(self.word):
-            return stopwords.stop_stem(self.word)
+        if arabicstopwords.is_stop(self.word):
+            return arabicstopwords.stop_stem(self.word)
         
         if not self.segment_list:
             self.segment(self.word)
@@ -1233,7 +1233,7 @@ class ArabicLightStemmer:
 
 
 if __name__ == "__main__":
-    from pyarabic.arabrepr import arepr as repr
+    #~ from pyarabic.arabrepr import arepr as repr
     ARLISTEM = ArabicLightStemmer()
     wordlist =[u'أفتضاربانني',
     u'بالمكتبة',

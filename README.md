@@ -16,7 +16,7 @@ It offers stemming and root extraction at the same time unlike Khoja stemmer, IS
 Features |   value
 ---------|---------------------------------------------------------------------------------
 Authors  | [Authors.md](https://github.com/linuxscout/tashaphyne/master/AUTHORS.md)
-Release  | 0.3 
+Release  | 0.3.5 
 License  |[GPL](https://github.com/linuxscout/tashaphyne/master/LICENSE)
 Tracker  |[linuxscout/tashaphyne/Issues](https://github.com/linuxscout/tashaphyne/issues)
 Website  |[https://pypi.python.org/pypi/Tashaphyne](https://pypi.python.org/pypi/Tashaphyne)

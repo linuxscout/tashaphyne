@@ -30,7 +30,7 @@ dot com
 | Authors | `Authors.md <https://github.com/linuxscout/tashaphyne/master/AUT |
 |         | HORS.md>`__                                                      |
 +---------+------------------------------------------------------------------+
-| Release | 0.3                                                              |
+| Release | 0.3.5                                                            |
 +---------+------------------------------------------------------------------+
 | License | `GPL <https://github.com/linuxscout/tashaphyne/master/LICENSE>`_ |
 |         | _                                                                |
@@ -63,7 +63,16 @@ If you would cite it in academic work, can you use this citation
 
     T. Zerrouki‏, Tashaphyne, Arabic light stemmer‏,  https://pypi.python.org/pypi/Tashaphyne/0.2
 
+or in bibtex format
 
+.. code:: bibtex
+
+    @misc{zerrouki2012tashaphyne,
+      title={Tashaphyne, Arabic light stemmer},
+      author={Zerrouki, Taha},
+      url={https://pypi.python.org/pypi/Tashaphyne/0.2},
+      year={2012}
+    }
 
 مزايا
 -----
@@ -410,4 +419,11 @@ If you would cite it in academic work, can you use this citation
 
 or in bibtex format
 
+.. code:: bibtex
 
+    @misc{zerrouki2012tashaphyne,
+      title={Tashaphyne, Arabic light stemmer},
+      author={Zerrouki, Taha},
+      url={https://pypi.python.org/pypi/Tashaphyne/0.2},
+      year={2012}
+    }

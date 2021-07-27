@@ -20,7 +20,7 @@ Release  | 0.3.5
 License  |[GPL](https://github.com/linuxscout/tashaphyne/master/LICENSE)
 Tracker  |[linuxscout/tashaphyne/Issues](https://github.com/linuxscout/tashaphyne/issues)
 Website  |[https://pypi.python.org/pypi/Tashaphyne](https://pypi.python.org/pypi/Tashaphyne)
-Doc  |[package Documentaion](http://pythonhosted.org/Tashaphyne/)
+Doc      |[package Documentaion](https://tashaphyne.readthedocs.io/)
 Source  |[Github](http://github.com/linuxscout/tashaphyne)
 Download  |[sourceforge](http://tashaphyne.sourceforge.net)
 Feedbacks  |[Comments](http://tahadz.com/tashaphyne/contact)

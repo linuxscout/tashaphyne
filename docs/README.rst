@@ -40,7 +40,7 @@ dot com
 +---------+------------------------------------------------------------------+
 | Website | https://pypi.python.org/pypi/Tashaphyne                          |
 +---------+------------------------------------------------------------------+
-| Doc     | `package Documentaion <http://pythonhosted.org/Tashaphyne/>`__   |
+| Doc     | `package Documentaion <https://tashaphyne.readthedocs.io/>`__    |
 +---------+------------------------------------------------------------------+
 | Source  | `Github <http://github.com/linuxscout/tashaphyne>`__             |
 +---------+------------------------------------------------------------------+

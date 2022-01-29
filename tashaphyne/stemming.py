@@ -1215,7 +1215,7 @@ class ArabicLightStemmer:
         triroots = [x for x in lst if len(x) == 3]
         if triroots:
             lst = triroots
-        return max(set(lst), key=lst.count)
+        return max(set(sorted(lst)), key=lst.count)
 
     def is_root(self, word):
         """ test if word is a root"""

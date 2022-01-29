@@ -6,7 +6,7 @@ from setuptools import setup
 def readme():
     with open('README.rst', encoding="utf8") as f:
         return f.read()
-setup (name='Tashaphyne', version='0.3.5',
+setup (name='Tashaphyne', version='0.3.6',
       description='Tashaphyne Arabic Light Stemmer',
       long_description = readme(),      
       author='Taha Zerrouki',

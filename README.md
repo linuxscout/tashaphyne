@@ -16,7 +16,7 @@ It offers stemming and root extraction at the same time unlike Khoja stemmer, IS
 Features |   value
 ---------|---------------------------------------------------------------------------------
 Authors  | [Authors.md](https://github.com/linuxscout/tashaphyne/master/AUTHORS.md)
-Release  | 0.3.5 
+Release  | 0.3.6 
 License  |[GPL](https://github.com/linuxscout/tashaphyne/master/LICENSE)
 Tracker  |[linuxscout/tashaphyne/Issues](https://github.com/linuxscout/tashaphyne/issues)
 Website  |[https://pypi.python.org/pypi/Tashaphyne](https://pypi.python.org/pypi/Tashaphyne)
@@ -95,57 +95,52 @@ It extract all possible affixation from a word and cite all possible configurati
 Stemming function, stem an arabic word, and return a stem. This function store in the instance the stemming positions (left, right), then it's possible to get other calculted attributs like : stem, prefixe, suffixe, root.
 
 ```python
->>> #make propre display for unicode
-... import pyarabic.arabrepr
->>> arepr = pyarabic.arabrepr.ArabicRepr()
->>> repr = arepr.repr
->>> 
 >>> from tashaphyne.stemming import ArabicLightStemmer
 >>> ArListem = ArabicLightStemmer()
 >>> word = u'أفتضاربانني'
 >>> # stemming word
 ... stem = ArListem.light_stem(word)
 >>> # extract stem
-... print ArListem.get_stem()
+... print(ArListem.get_stem())
 ضارب
 >>> # extract root
-... print ArListem.get_root()
+... print(ArListem.get_root())
 ضرب
 >>> 
 >>> # get prefix position index
-... print ArListem.get_left()
+... print(ArListem.get_left())
 3
 >>> # get prefix 
-... print ArListem.get_prefix()    
+... print(ArListem.get_prefix())
 أفت
 >>> # get prefix with a specific index
-... print ArListem.get_prefix(2)    
+... print(ArListem.get_prefix(2))    
 أف
 >>> 
 >>> # get suffix position index
-... print ArListem.get_right()
+... print(ArListem.get_right())
 7
 >>> # get suffix 
-... print ArListem.get_suffix()    
+... print(ArListem.get_suffix())   
 انني
 >>> # get suffix with a specific index
-... print ArListem.get_suffix(10)    
+... print(ArListem.get_suffix(10))    
 ي
 >>> # get affix
->>> print ArListem.get_affix()
+>>> print(ArListem.get_affix())
 أفت-انني
 >>> # get affix tuple
-... print repr(ArListem.get_affix_tuple())    
+... print(ArListem.get_affix_tuple())
 {'prefix': u'أفت', 'root': u'', 'stem': u'', 'suffix': u'أفتضاربانني'}
 >>> # star words
-... print ArListem.get_starword()
+... print(ArListem.get_starword())
 أفت*ا**انني
 >>> # get star stem
-... print ArListem.get_starstem()
+... print(ArListem.get_starstem())
 *ا**
 >>> 
 >>> #  get unvocalized word
-... print ArListem.get_unvocalized()
+... print(ArListem.get_unvocalized())
 أفتضاربانني
 ```
 
@@ -175,15 +170,15 @@ Generate a list of all posibble segmentation positions (lef, right) of the treat
 >>> word = u'أفتضاربانني'
 
 >>> # Detect all possible segmentation
-... print ArListem.segment(word) 
+... print(ArListem.segment(word))
 set([(2, 7), (3, 8), (0, 8), (2, 9), (2, 8), (3, 10), (2, 11), (1, 8), (0, 7), (2, 10), (3, 11), (1, 10), (0, 11), (3, 9), (0, 10), (1, 7), (0, 9), (3, 7), (1, 11), (1, 9)])
 
 >>># Get all segment 
->>>print ArListem.get_segment_list()
+>>>print(ArListem.get_segment_list())
 set([(2, 7), (3, 8), (0, 8), (2, 9), (2, 8), (3, 10), (2, 11), (1, 8), (0, 7), (2, 10), (3, 11), (1, 10), (0, 11), (3, 9), (0, 10), (1, 7), (0, 9), (3, 7), (1, 11), (1, 9)])
 
 >>> # get affix list
-... print repr(ArListem.get_affix_list() )
+... print(ArListem.get_affix_list())
 [{'prefix': u'أف', 'root': u'ضرب', 'stem': u'تضارب', 'suffix': u'انني'},
  {'prefix': u'أفت', 'root': u'ضرب', 'stem': u'ضاربا', 'suffix': u'نني'},
  {'prefix': u'', 'root': u'أفضرب', 'stem': u'أفتضاربا', 'suffix': u'نني'}, 
@@ -228,13 +223,13 @@ You can modify and customize  the default affixes list by
 >>> # segment word as 
 ... simple_stemmer.segment(word)
 set([(4, 10), (4, 7), (4, 9), (4, 8), (3, 10), (0, 7), (3, 8), (1, 10), (1, 8), (3, 9), (0, 10), (1, 7), (0, 9), (3, 7), (0, 8), (1, 9)])
->>> print  repr(simple_stemmer.get_affix_list())
+>>> print(simple_stemmer.get_affix_list())
 [{'prefix': u'بالم', 'root': u'درستين', 'stem': u'درستين', 'suffix': u''}, {'prefix': u'بالم', 'root': u'درس', 'stem': u'درس', 'suffix': u'تين'}, {'prefix': u'بالم', 'root': u'درستي', 'stem': u'درستي', 'suffix': u'ن'}, {'prefix': u'بالم', 'root': u'درست', 'stem': u'درست', 'suffix': u'ين'}, {'prefix': u'بال', 'root': u'مدرستين', 'stem': u'مدرستين', 'suffix': u''}, {'prefix': u'', 'root': u'بالمدرس', 'stem': u'بالمدرس', 'suffix': u'تين'}, ...]
 >>> 
 >>> custom_stemmer.segment(word)
 set([(1, 10), (3, 10), (0, 10)])
 >>> 
->>> print  repr(custom_stemmer.get_affix_list())
+>>> print(custom_stemmer.get_affix_list())
 [{'prefix': u'ب', 'root': u'المدرستين', 'stem': u'المدرستين', 'suffix': u''}, {'prefix': u'بال', 'root': u'مدرستين', 'stem': u'مدرستين', 'suffix': u''}, {'prefix': u'', 'root': u'بالمدرستين', 'stem': u'بالمدرستين', 'suffix': u''}]
 >>> 
 

@@ -147,15 +147,15 @@ Stemming function, stem an arabic word, and return a stem. This function store i
 function | Description | وصف|
 ---------|-------------|----|
 get_root()|Get the root of the treated word by the stemmer. |استخلاص الجذر|
-get_stem()|Get the stem of the treated word by the stemmer.|استخلاص الجذعيمكن استخلاص الجذع التلقائي مباشرة، عند الرغبة في الحصول على جذع معين، نحدد دليل السابق، ودليل اللاحق.|
+get_stem()|Get the stem of the treated word by the stemmer.|استخلاص الجذع يمكن استخلاص الجذع التلقائي مباشرة، عند الرغبة في الحصول على جذع معين، نحدد دليل السابق، ودليل اللاحق.|
 get_left()| Get the prefix end position | موضع نهاية السابقة|
 get_right()|Get the suffix start position| موضع بداية اللاحقة |
 get_prefix()|return the prefix/suffix of the treated word by the stemmer.|استرجاع السابقة التلقائية أو سابقة معينة بموضع|
 get_suffix()| Get default suffix, or suffix by suffix index| استرجاع اللاحقة التلقائية أو بواسطة دليل اللاحقة
-get_affix()|Get default Affix or specific by left and right indexes|استرجاع الزائدة التلقائية أو المعينةبدليلي السابق واللاحق|
+get_affix()|Get default Affix or specific by left and right indexes|استرجاع الزائدة التلقائية أو المعينة بدليلي السابق واللاحق|
 get_affix_tuple()|Get affixe tuple | استرجاع الزائدة بتفاصيلها
-get_starword()|Get stared word, radical letters replaced by "*"|استرجاع الكلمة المنجمة، الحروف الأصلية مخفية بنجوم
-get_starstem()|Get stared stem, radical letters replaced by "*"|استرجاع الجذع المنجم، الحروف الأصلية مخفية بنجوم
+get_starword()|Get starred word, radical letters replaced by "*"|استرجاع الكلمة المنجمة، الحروف الأصلية مخفية بنجوم
+get_starstem()|Get starred stem, radical letters replaced by "*"|استرجاع الجذع المنجم، الحروف الأصلية مخفية بنجوم
 get_unvocalized()|return the unvocalized form of the treated word by the stemmer. Harakat are striped.| استرجاع الكلمة غير مشكولة|
 
 

@@ -1,4 +1,6 @@
 # Tashaphyne
+![downloads](https://img.shields.io/pypi/dm/tashaphyne?style=plastic)
+
 
 **Tashaphyne**: Arabic Light Stemmer تاشفين: التجذيع الخفيف للنصوص العربية
 

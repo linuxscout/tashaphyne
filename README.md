@@ -4,13 +4,13 @@
 
 **Tashaphyne**: Arabic Light Stemmer تاشفين: التجذيع الخفيف للنصوص العربية
 
-**Tashaphyne** is an Arabic light stemmer and segmentor. It mainly supports light stemming (removing prefixes and suffixes) and give all possible segmentations. It use a modified finite state Automaton which allow to generate all segmentations.
+**Tashaphyne** is an Arabic light stemmer and segmentor. It mainly supports light stemming (removing prefixes and suffixes) and gives all possible segmentations. It uses a modified finite state automaton, which allows it to generate all segmentations.
 
-It offers stemming and root extraction at the same time unlike Khoja stemmer, ISRI semmer, Assem stemmer, Farasa stemmer.
+It offers stemming and root extraction at the same time, unlike the Khoja stemmer, ISRI stemmer, Assem stemmer, and Farasa stemmer.
 
-**Tashaphyne** comes with default prefixes and suffixes, and accept the use of customized prefixes and suffixes list, which allow it to handle more aspect, and make customized stemmers without changing code.
+**Tashaphyne** comes with default prefixes and suffixes, and accepts the use of customized prefixes and suffixes lists, which allow it to handle more aspects and make customized stemmers without changing code.
 
-**Tashaphyne** is a python library, it's available as demo on  [Mishkal](http://tahadz.com/mishkal), choose Tools/Analysis and as source code on [Github](http://github.com/linuxscout/tashaphyne) 
+**Tashaphyne** is a python library, it's available as a demo on  [Mishkal](http://tahadz.com/mishkal), choose Tools/Analysis and as source code on [Github](http://github.com/linuxscout/tashaphyne) 
 
   Developpers:  Taha Zerrouki: http://tahadz.com
     taha dot zerrouki at gmail dot com
@@ -81,9 +81,9 @@ Usage
 =====
 
 
-Tahsphyne is a finite state automaton stemmed based, it extract affixes (prefixes and suffixes), with a predefined affixes list.
+Tahsphyne is a finite state automaton stem-based; it extracts affixes (prefixes and suffixes) from a predefined affix list.
 
-It extract all possible affixation from a word and cite all possible configuration stemming of a given word.
+It extracts all possible affixations from a word and cites all possible configurations stemming from a given word.
 
 
 
@@ -94,7 +94,7 @@ It extract all possible affixation from a word and cite all possible configurati
 
 تجذيع الكلمة واستخلاص كل المعلومات منها بواسطة الدوال المناسبة
 
-Stemming function, stem an arabic word, and return a stem. This function store in the instance the stemming positions (left, right), then it's possible to get other calculted attributs like : stem, prefixe, suffixe, root.
+Stemming function: stem an Arabic word and return a stem. This function stores in the instance the stemming positions (left, right), and then it's possible to get other calculated attributes like stem, prefix, suffix, and root.
 
 ```python
 >>> from tashaphyne.stemming import ArabicLightStemmer
@@ -165,7 +165,7 @@ get_unvocalized()|return the unvocalized form of the treated word by the stemmer
 
 * تقسيم الكلمة إلى كل الزوائد المحتملة
 
-Generate a list of all posibble segmentation positions (lef, right) of the treated word by the stemmer.
+Generate a list of all possible segmentation positions (left, right) of the treated word by the stemmer.
 
 ```python
 

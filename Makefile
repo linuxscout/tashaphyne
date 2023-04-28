@@ -34,3 +34,5 @@ upload:
 build: wheel wheel3 sdist
 doc:
 	epydoc -v --config epydoc.conf
+paper:
+	pandoc paper.md --citeproc --bibliography paper.bib -t latex -o paper.pdf

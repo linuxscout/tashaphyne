@@ -40,6 +40,7 @@ Tashaphyne contains two important submodules: stemming and normalizing. Normaliz
 
 
 Tashaphyne has been developed within "Adawat", an open-source framework for processing Arabic texts developed as part of a PhD research project [@zerrouki2020towards:2020]. Adawat includes several tools, including Mishkal [@mishkal] for restoring Arabic text diacritics and Qalsadi [@qalsadi] for Arabic morphology analysis, both of which rely on Tashaphyne's functionalities.
+In another project, we worked on applying the stemming algorithm to tackle the information retrieval problem in medical documents. [@al2021new]. 
 
 
 Another framework that has incorporated Tashaphyne is the Classical Language Toolkit (CLTK \footnote{\url{http://cltk.org}} [@johnson2014:2014]), which provides natural language processing support for ancient, classical, and medieval Eurasian languages. CLTK uses Tashaphyne for several tasks, including corpus importer, tokenization, text conversion, and transliteration for classical Arabic [@johnson2014:2014]  (like the orthography of the Quran).
@@ -53,7 +54,10 @@ In terms of applications, Tashaphyne is ideal for stemming Arabic text, which is
 
 # Mention
 
+
+
 Tashaphyne has been widely used as a tool in various natural language processing tasks by researchers. Stemming development and evaluation have been explored by [@atoumsentiment2019; @jaafar2017enhancing; @jaafar2015; @el2016rule; @dahab2015comparative; @el2015cbas]. Root extraction and evaluation were studied by [@el2015enhancing; @el2017efficient]. Tashaphyne has been utilized for text categorization [@sallam2016improving; @hussein2016arabic], classification [@gharbat2019discovering; @naji2017new; @el2016arabic; @alhaj2019study], topic segmentation [@naili2018contribution], and summarization [@al2019wajeez]. It has been applied to social media analysis [@almuqhim2016; @bulbul2018social; @kumar2013; @kumar2015social], sentiment analysis [@oussous2019impact; @oussous2020asa; @al2019improving; @alotaibi2016; @alotaibi2015sentiment; @al2014subjectivity; @oraby2013exploring; @shoukry2012preprocessing; @shoukry2013; @al2018comprehensive], and tweet classification [@abozinadah2016improved; @abozinadah2017detecting; @brahimi2016data; @mourad2017language]. Tashaphyne has also been utilized for building resources such as corpora [@van2018bridging] and ontologies [@albukhitan2017arabic], question answering [@ezzeldin2015exploring; @ezzeldin2014answer], and information retrieval [@mortaja2017developing].
+
 
 
 

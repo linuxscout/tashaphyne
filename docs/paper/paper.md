@@ -56,7 +56,13 @@ In terms of applications, Tashaphyne is ideal for stemming Arabic text, which is
 
 
 
-Tashaphyne has been widely used as a tool in various natural language processing tasks by researchers. Stemming development and evaluation have been explored by [@atoumsentiment2019; @jaafar2017enhancing; @jaafar2015; @el2016rule; @dahab2015comparative; @el2015cbas]. Root extraction and evaluation were studied by [@el2015enhancing; @el2017efficient]. Tashaphyne has been utilized for text categorization [@sallam2016improving; @hussein2016arabic], classification [@gharbat2019discovering; @naji2017new; @el2016arabic; @alhaj2019study], topic segmentation [@naili2018contribution], and summarization [@al2019wajeez]. It has been applied to social media analysis [@almuqhim2016; @bulbul2018social; @kumar2013; @kumar2015social], sentiment analysis [@oussous2019impact; @oussous2020asa; @al2019improving; @alotaibi2016; @alotaibi2015sentiment; @al2014subjectivity; @oraby2013exploring; @shoukry2012preprocessing; @shoukry2013; @al2018comprehensive], and tweet classification [@abozinadah2016improved; @abozinadah2017detecting; @brahimi2016data; @mourad2017language]. Tashaphyne has also been utilized for building resources such as corpora [@van2018bridging] and ontologies [@albukhitan2017arabic], question answering [@ezzeldin2015exploring; @ezzeldin2014answer], and information retrieval [@mortaja2017developing].
+Tashaphyne has been widely used as a tool in various natural language processing tasks by researchers. Stemming development and evaluation have been explored by [@atoumsentiment2019; @jaafar2017enhancing; @jaafar2015; @el2016rule; @dahab2015comparative; @el2015cbas]. Root extraction and evaluation were studied by [@el2015enhancing; @el2017efficient]. 
+
+Tashaphyne has been utilized for text categorization [@sallam2016improving; @hussein2016arabic], classification [@muaad2022arabic; @hijazi2022review; @gharbat2019discovering; @naji2017new; @el2016arabic; @alhaj2019study], topic segmentation [@ALAHMADI20222651; @naili2018contribution], and summarization [@etaiwi2022semg; @tanfouri2022; @al2019wajeez]. 
+
+It has been applied to social media analysis [@AMEUR2023100517; @almuqhim2016; @bulbul2018social; @kumar2013; @kumar2015social], sentiment analysis [@alqahtani2023comparative; @erramisentiment2023; @oussous2019impact; @oussous2020asa; @al2019improving; @alotaibi2016; @alotaibi2015sentiment; @al2014subjectivity; @oraby2013exploring; @shoukry2012preprocessing; @shoukry2013; @al2018comprehensive], and tweet classification [@alhaj2022improving; @abozinadah2016improved; @abozinadah2017detecting; @brahimi2016data; @mourad2017language]. 
+
+Tashaphyne has also been utilized for building resources such as corpora [@van2018bridging] and ontologies [@albukhitan2017arabic], question answering [@abdulsalam2022; @ezzeldin2015exploring; @ezzeldin2014answer], and information retrieval [@Sakthi2022; @al2021new; @mortaja2017developing].
 
 
 

@@ -25,7 +25,7 @@ Website  |[https://pypi.python.org/pypi/Tashaphyne](https://pypi.python.org/pypi
 Doc      |[package Documentaion](https://tashaphyne.readthedocs.io/)
 Source  |[Github](http://github.com/linuxscout/tashaphyne)
 Download  |[sourceforge](http://tashaphyne.sourceforge.net)
-Feedbacks  |[Comments](http://tahadz.com/tashaphyne/contact)
+Feedbacks  |[Comments](http://tahadz.com/contact.html)
 Accounts  |[@Twitter](https://twitter.com/linuxscout)  [@Sourceforge](http://sourceforge.net/projects/tashaphyne/)
 
 

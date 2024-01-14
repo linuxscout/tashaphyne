@@ -99,7 +99,7 @@ Stemming function: stem an Arabic word and return a stem. This function stores i
 ```python
 >>> from tashaphyne.stemming import ArabicLightStemmer
 >>> ArListem = ArabicLightStemmer()
->>> word = u'أفتضاربانني'
+>>> word = 'أفتضاربانني'
 >>> # stemming word
 ... stem = ArListem.light_stem(word)
 >>> # extract stem
@@ -133,7 +133,7 @@ Stemming function: stem an Arabic word and return a stem. This function stores i
 أفت-انني
 >>> # get affix tuple
 ... print(ArListem.get_affix_tuple())
-{'prefix': u'أفت', 'root': u'', 'stem': u'', 'suffix': u'أفتضاربانني'}
+{'prefix': 'أفت', 'root': '', 'stem': '', 'suffix': 'أفتضاربانني'}
 >>> # star words
 ... print(ArListem.get_starword())
 أفت*ا**انني
@@ -169,7 +169,7 @@ Generate a list of all possible segmentation positions (left, right) of the trea
 
 ```python
 
->>> word = u'أفتضاربانني'
+>>> word = 'أفتضاربانني'
 
 >>> # Detect all possible segmentation
 ... print(ArListem.segment(word))
@@ -181,12 +181,12 @@ set([(2, 7), (3, 8), (0, 8), (2, 9), (2, 8), (3, 10), (2, 11), (1, 8), (0, 7), (
 
 >>> # get affix list
 ... print(ArListem.get_affix_list())
-[{'prefix': u'أف', 'root': u'ضرب', 'stem': u'تضارب', 'suffix': u'انني'},
- {'prefix': u'أفت', 'root': u'ضرب', 'stem': u'ضاربا', 'suffix': u'نني'},
- {'prefix': u'', 'root': u'أفضرب', 'stem': u'أفتضاربا', 'suffix': u'نني'}, 
- {'prefix': u'أف', 'root': u'ضربن', 'stem': u'تضاربان', 'suffix': u'ني'}, 
- {'prefix': u'أف', 'root': u'ضرب', 'stem': u'تضاربا', 'suffix': u'نني'}, 
- {'prefix': u'أفت', 'root': u'ضربنن', 'stem': u'ضاربانن', 'suffix': u'ي'}, ...]
+[{'prefix': 'أف', 'root': 'ضرب', 'stem': 'تضارب', 'suffix': 'انني'},
+ {'prefix': 'أفت', 'root': 'ضرب', 'stem': 'ضاربا', 'suffix': 'نني'},
+ {'prefix': '', 'root': 'أفضرب', 'stem': 'أفتضاربا', 'suffix': 'نني'}, 
+ {'prefix': 'أف', 'root': 'ضربن', 'stem': 'تضاربان', 'suffix': 'ني'}, 
+ {'prefix': 'أف', 'root': 'ضرب', 'stem': 'تضاربا', 'suffix': 'نني'}, 
+ {'prefix': 'أفت', 'root': 'ضربنن', 'stem': 'ضاربانن', 'suffix': 'ي'}, ...]
 >>> 
 ```
 * segment() / get_segment_list()
@@ -209,8 +209,8 @@ You can modify and customize  the default affixes list by
 ```python
 >>> import tashaphyne.stemming
 
->>> CUSTOM_PREFIX_LIST = [u'كال', u'أفبال', u'أفك', u'فك', u'أولل', u'', u'أف', u'ول', u'أوال', u'ف', u'و', u'أو', u'ولل', u'فب', u'أول', u'ألل', u'لل', u'ب', u'وكال', u'أوب', u'بال', u'أكال', u'ال', u'أب', u'وب', u'أوبال', u'أ', u'وبال', u'أك', u'فكال', u'أوك', u'فلل', u'وك', u'ك', u'أل', u'فال', u'وال', u'أوكال', u'أفلل', u'أفل', u'فل', u'أال', u'أفكال', u'ل', u'أبال', u'أفال', u'أفب', u'فبال']
->>> CUSTOM_SUFFIX_LIST = [u'كما', u'ك', u'هن', u'ي', u'ها', u'', u'ه', u'كم', u'كن', u'هم', u'هما', u'نا']
+>>> CUSTOM_PREFIX_LIST = [u'كال', 'أفبال', 'أفك', 'فك', 'أولل', '', 'أف', 'ول', 'أوال', 'ف', 'و', 'أو', 'ولل', 'فب', 'أول', 'ألل', 'لل', 'ب', 'وكال', 'أوب', 'بال', 'أكال', 'ال', 'أب', 'وب', 'أوبال', 'أ', 'وبال', 'أك', 'فكال', 'أوك', 'فلل', 'وك', 'ك', 'أل', 'فال', 'وال', 'أوكال', 'أفلل', 'أفل', 'فل', 'أال', 'أفكال', 'ل', 'أبال', 'أفال', 'أفب', 'فبال']
+>>> CUSTOM_SUFFIX_LIST = [u'كما', 'ك', 'هن', 'ي', 'ها', '', 'ه', 'كم', 'كن', 'هم', 'هما', 'نا']
 
 >>> # simple stemmer with default affixes list
 ... simple_stemmer = tashaphyne.stemming.ArabicLightStemmer()
@@ -221,18 +221,18 @@ You can modify and customize  the default affixes list by
 ... custom_stemmer.set_prefix_list(CUSTOM_PREFIX_LIST)
 >>> custom_stemmer.set_suffix_list(CUSTOM_SUFFIX_LIST)
 >>> 
->>> word = u"بالمدرستين"
+>>> word = "بالمدرستين"
 >>> # segment word as 
 ... simple_stemmer.segment(word)
 set([(4, 10), (4, 7), (4, 9), (4, 8), (3, 10), (0, 7), (3, 8), (1, 10), (1, 8), (3, 9), (0, 10), (1, 7), (0, 9), (3, 7), (0, 8), (1, 9)])
 >>> print(simple_stemmer.get_affix_list())
-[{'prefix': u'بالم', 'root': u'درستين', 'stem': u'درستين', 'suffix': u''}, {'prefix': u'بالم', 'root': u'درس', 'stem': u'درس', 'suffix': u'تين'}, {'prefix': u'بالم', 'root': u'درستي', 'stem': u'درستي', 'suffix': u'ن'}, {'prefix': u'بالم', 'root': u'درست', 'stem': u'درست', 'suffix': u'ين'}, {'prefix': u'بال', 'root': u'مدرستين', 'stem': u'مدرستين', 'suffix': u''}, {'prefix': u'', 'root': u'بالمدرس', 'stem': u'بالمدرس', 'suffix': u'تين'}, ...]
+[{'prefix': 'بالم', 'root': 'درستين', 'stem': 'درستين', 'suffix': ''}, {'prefix': 'بالم', 'root': 'درس', 'stem': 'درس', 'suffix': 'تين'}, {'prefix': 'بالم', 'root': 'درستي', 'stem': 'درستي', 'suffix': 'ن'}, {'prefix': 'بالم', 'root': 'درست', 'stem': 'درست', 'suffix': 'ين'}, {'prefix': 'بال', 'root': 'مدرستين', 'stem': 'مدرستين', 'suffix': ''}, {'prefix': '', 'root': 'بالمدرس', 'stem': 'بالمدرس', 'suffix': 'تين'}, ...]
 >>> 
 >>> custom_stemmer.segment(word)
 set([(1, 10), (3, 10), (0, 10)])
 >>> 
 >>> print(custom_stemmer.get_affix_list())
-[{'prefix': u'ب', 'root': u'المدرستين', 'stem': u'المدرستين', 'suffix': u''}, {'prefix': u'بال', 'root': u'مدرستين', 'stem': u'مدرستين', 'suffix': u''}, {'prefix': u'', 'root': u'بالمدرستين', 'stem': u'بالمدرستين', 'suffix': u''}]
+[{'prefix': 'ب', 'root': 'المدرستين', 'stem': 'المدرستين', 'suffix': ''}, {'prefix': 'بال', 'root': 'مدرستين', 'stem': 'مدرستين', 'suffix': ''}, {'prefix': '', 'root': 'بالمدرستين', 'stem': 'بالمدرستين', 'suffix': ''}]
 >>> 
 
 ```

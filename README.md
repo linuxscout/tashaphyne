@@ -38,10 +38,10 @@ T. Zerrouki‏, Tashaphyne, Arabic light stemmer‏,  https://pypi.python.org/py
 or in bibtex format
 ```bibtex
 @misc{zerrouki2012tashaphyne,
-  title={Tashaphyne, Arabic light stemmer},
-  author={Zerrouki, Taha},
-  url={https://pypi.python.org/pypi/Tashaphyne/0.2},
-  year={2012}
+title={Tashaphyne, Arabic light stemmer},
+author={Zerrouki, Taha},
+url={https://pypi.python.org/pypi/Tashaphyne/0.2},
+year={2012}
 }
 ```
 
@@ -52,7 +52,7 @@ or in bibtex format
  - تقطيع الكلمة إلى جميع الحالات الممكنة.
  - تنميط الكلمة ( توحيد الحروف ذات الأشكال المختلفة.
  - قائمة مسبقة للزوائد العربية، وحروف الزيادة
- -إمكانية ضبط إعدادات المجذع والمقطع، من خلال تعديل قوائم الزوائد.
+ - إمكانية ضبط إعدادات المجذع والمقطع، من خلال تعديل قوائم الزوائد.
  
 ## Features
  - Arabic word Light Stemming.
@@ -64,15 +64,14 @@ or in bibtex format
  - Data independent stemmer.
 
 
-Applications
-====
+## Applications
 * Stemming texts
 * Text Classification and categorization
 * Sentiment Analysis
 * Named Entities Recognition
 
-Installation
-=====
+## Installation
+
 ```
 pip install tashaphyne
 ```    
@@ -162,7 +161,6 @@ get_unvocalized()|return the unvocalized form of the treated word by the stemmer
 
 
 * استخلاص كل التقسيمات المحتملة
-
 * تقسيم الكلمة إلى كل الزوائد المحتملة
 
 Generate a list of all possible segmentation positions (left, right) of the treated word by the stemmer.
@@ -194,6 +192,7 @@ set([(2, 7), (3, 8), (0, 8), (2, 9), (2, 8), (3, 10), (2, 11), (1, 8), (0, 7), (
 return a list of segmentation positions (left, right) of the treated word by the stemmer.
 
 * get_affix_list
+
  استخلاص قائمة كل الزوائد المحتملة
 
 return a list of affix tuple of the treated word by the stemmer.
@@ -289,9 +288,9 @@ T. Zerrouki‏, Tashaphyne, Arabic light stemmer‏,  https://pypi.python.org/py
 or in bibtex format
 ```bibtex
 @misc{zerrouki2012tashaphyne,
-  title={Tashaphyne, Arabic light stemmer},
-  author={Zerrouki, Taha},
-  url={https://pypi.python.org/pypi/Tashaphyne/0.2},
-  year={2012}
+title={Tashaphyne, Arabic light stemmer},
+author={Zerrouki, Taha},
+url={https://pypi.python.org/pypi/Tashaphyne/0.2},
+year={2012}
 }
 ```

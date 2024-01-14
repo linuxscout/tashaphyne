@@ -15,6 +15,7 @@ It offers stemming and root extraction at the same time, unlike the Khoja stemme
   Developpers:  Taha Zerrouki: http://tahadz.com
     taha dot zerrouki at gmail dot com
 
+---------|---------------------------------------------------------------------------------
 Features |   value
 ---------|---------------------------------------------------------------------------------
 Authors  | [Authors.md](https://github.com/linuxscout/tashaphyne/master/AUTHORS.md)

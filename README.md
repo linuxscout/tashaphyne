@@ -239,6 +239,29 @@ set([(1, 10), (3, 10), (0, 10)])
 
 This command *set_prefix_list*  and  *set_suffix_list" will rebuild the Finite state automaton to consider new affixes list.
 
+### Stemming a text
+
+To stem all words in a text, we use tokenization preprocessing:
+```
+>>> import pyarabic.araby as araby
+>>> from tashaphyne.stemming import ArabicLightStemmer
+>>> stemmer  = ArabicLightStemmer()
+>>> text = "الأطفال يستريحون في المكتبة للمطالعة"
+>>> tokens = araby.tokenize(text)
+>>> tokens
+['الأطفال', 'يستريحون', 'في', 'المكتبة', 'للمطالعة']
+>>> for tok in tokens:
+...     stem = stemmer.light_stem(tok)
+...     print(tok, stem)
+... 
+الأطفال أطفال
+يستريحون يستريح
+في في
+المكتبة مكتب
+للمطالعة مطالع
+>>> 
+
+```
 Package Documentation
 =====
 

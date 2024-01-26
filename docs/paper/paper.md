@@ -33,7 +33,7 @@ Tashaphyne is a light stemmer and segmentor in Arabic. It mostly supports light 
 
 Tashaphyne also supports modifiable prefixes and suffixes, making it a highly adaptable tool for building customized stemmers without altering the code in any way.
 
-Tashaphyne can be found at [PyPi.org index](https://pypi.org/project/tashaphyne/) \footnote{\url{https://pypi.org/project/tashaphyne/}}., it’s available as [demo on Mishkal](http://tahadz.com/mishkal), choose Tools/Analysis and as source code on [Github](http://github.com/linuxscout/tashaphyne).
+Tashaphyne can be found at [PyPi.org index](https://pypi.org/project/tashaphyne/) \footnote{\url{https://pypi.org/project/tashaphyne/}}, it’s available as a [demo on Mishkal](http://tahadz.com/mishkal), choose Tools/Analysis and as source code on [Github](http://github.com/linuxscout/tashaphyne).
 
 
 Tashaphyne contains two important submodules: stemming and normalizing. Normalizing text is an important preprocessing step in natural language processing that involves transforming text data into a standardized format. Normalization of Arabic text involves several sub-tasks, including removing diacritics [@Zerrouki2023], normalizing characters, and removing ligatures. These sub-tasks are essential for improving the accuracy of downstream tasks such as text classification, named entity recognition, and sentiment analysis. Tashaphyne, with its ability to perform light stemming and segmenting, can also assist in normalizing Arabic text, further highlighting its importance in Arabic language processing

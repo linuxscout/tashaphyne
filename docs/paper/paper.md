@@ -2,11 +2,11 @@
 title: >-
     Tashaphyne: A Python package for Arabic Light Stemming
 tags:
-    Python
-    Arabic Language
-    Natural Language Processing
-    Text Preprocessing
-    Light Stemming
+  - Python
+  - Arabic Language
+  - Natural Language Processing
+  - Text Preprocessing
+  - Light Stemming
 authors:
   - name: Taha Zerrouki
     email: t.zerrouki@univ-bouira.dz

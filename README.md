@@ -33,9 +33,14 @@ Accounts  |[@Twitter](https://twitter.com/linuxscout)  [@Sourceforge](http://sou
 
 ## Citation
 If you would cite it in academic work, can you use this citation
-```
-T. Zerrouki‏, Tashaphyne, Arabic light stemmer‏,  https://pypi.python.org/pypi/Tashaphyne/0.2
-```
+
+* T. Zerrouki‏, **Tashaphyne, Arabic light stemmer**‏,  https://pypi.python.org/pypi/Tashaphyne/0.2
+* Zerrouki, T. (2024). **Tashaphyne: A python package for arabic light stemming**. Journal of Open Source
+Software, 9(93), 6063.  doi: http://doi.org/10.21105/joss.06063
+*  Alkhatib, R. M., Zerrouki, T., Shquier, M. M. A., & Balla, A. (2023). **Tashaphyne0.4: A new arabic light
+stemmer based on rhyzome modeling approach**. Information Retrieval Journa, 26(14). doi: https://doi.org/10.1007/s10791-023-09429-y
+* Alkhatib, R. M., Zerrouki, T., Shquier, M. M. A., Balla, A., & Al-Khateeb, A. (2021). **A new enhanced arabic light stemmer for ir in medical documents**. CMC-COMPUTERS MATERIALS & CONTINUA, 68(1), 1255–1269. 
+
 or in bibtex format
 ```bibtex
 @misc{zerrouki2012tashaphyne,
@@ -43,6 +48,45 @@ title={Tashaphyne, Arabic light stemmer},
 author={Zerrouki, Taha},
 url={https://pypi.python.org/pypi/Tashaphyne/0.2},
 year={2012}
+}
+```
+
+** bibtex
+```bibtex
+@article{Zerrouki2024,
+	title        = {Tashaphyne: A Python package for Arabic Light Stemming},
+	author       = {Taha Zerrouki},
+	year         = 2024,
+	journal      = {Journal of Open Source Software},
+	publisher    = {The Open Journal},
+	volume       = 9,
+	number       = 93,
+	pages        = 6063,
+	doi          = {10.21105/joss.06063},
+	url          = {https://doi.org/10.21105/joss.06063}
+}
+```
+
+```bibtex
+@article{raed20223,
+  title={Tashaphyne0.4: a new arabic light stemmer based  on rhyzome modeling approach},
+  author={Alkhatib, Read M and Zerrouki, Taha and Shquier, Mohammed M Abu and Balla, Amar},
+  journal={Information Retrieval Journa},
+  year={2023},
+  pages={},
+  volume={26},
+  number={14}, 
+  doi={https://doi.org/10.1007/s10791-023-09429-y}
+}
+
+@article{raed2021,
+  title={A New Enhanced Arabic Light Stemmer for IR in Medical Documents},
+  author={Alkhatib, Read M and Zerrouki, Taha and Shquier, Mohammed M Abu and Balla, Amar and Al-Khateeb, Asef},
+  journal={CMC-COMPUTERS MATERIALS \& CONTINUA},
+  year={2021},
+  pages={1255-1269},
+  volume={68},
+  number={1}
 }
 ```
 

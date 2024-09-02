@@ -4,6 +4,13 @@
 
 **Tashaphyne**: Arabic Light Stemmer تاشفين: التجذيع الخفيف للنصوص العربية
 
+[تاشفين](https://github.com/linuxscout/tashaphyne) برنامج تجذيع عربي خفيف ومقطع للكلمات. يدعم بشكل أساسي التجذيع الخفيف (إزالة السوابق واللواحق) ويعطي الجذوع  الممكنة. يستخدم ألة ذات وضعيات محدودة معدّلة، مما يسمح له باستخلاص كل الجذوع الممكنة.
+
+يوفر تاشفين استخلاص الجذع والجذر من الكلمة في نفس الوقت، على عكس برامج التجذيع مثل Khoja وISRI وAssem وFarasa.
+
+**تاشفين** يأتي بقائمة افتراضية للسوابق واللواحق، ويقبل استخدام قوائم مخصصة للزوائد، مما يسمح له بالتعامل مع المزيد من الجوانب الصرفية، وإنشاء زوائد مخصصة دون تغيير الكود.
+
+**تاشفين** هي مكتبة بايثون، وهي متاحة للتجربة في برنامج مشكال على [Mishkal](http://tahadz.com/mishkal)، اختر أدوات/تحليل والمصدر مفتوح على [Github](http://github.com/linuxscout/tashaphyne)
 **Tashaphyne** is an Arabic light stemmer and segmentor. It mainly supports light stemming (removing prefixes and suffixes) and gives all possible segmentations. It uses a modified finite state automaton, which allows it to generate all segmentations.
 
 It offers stemming and root extraction at the same time, unlike the Khoja stemmer, ISRI stemmer, Assem stemmer, and Farasa stemmer.
